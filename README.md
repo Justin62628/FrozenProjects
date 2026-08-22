@@ -66,6 +66,7 @@ python _extract/extract_fragments.py
 python _extract/extract_fragments.py --group "E:\Library\Documents\QQChatExporter\exports\group_冰学三点饮茶室_732870642_20260822_042107409_chunked_jsonl.zip"
 python _extract/review_server.py
 python _extract/copy_range.py PATH --start "起始全文" --end "结束全文"
+python _extract/author_theory_arc.py --uin 2778807491 -o 其他/FrozenHeart冰学观发展史.md
 ```
 
 群聊片段筛选：先跑 `extract_fragments.py` 写出 `_extract/data/candidates.json`，再开 `review_server.py` 人工标。判定存在 `_extract/data/decisions.json`，重跑提取不会覆盖已有判定（按 candidate id 对齐）。跨群靠合并转发，见 [[NOTE-QQChat-JSONL]]。
@@ -88,6 +89,15 @@ python _extract/stamp_times.py 核心 冰学独立理论与分析 冰学讨论 �
 ```
 
 默认读 `_extract/groups.json` 里全部群（目录或 zip）；`--group PATH` 可追加，`--tea` / `--klein` 仍可用。
+
+按 QQ 号抽一个人的全部发言，用字 n-gram TF-IDF（scikit-learn）把长帖贴到库内笔记种子，剩余再聚类，写出理论发展史草稿和 sidecar JSON。依赖：`pip install -r _extract/requirements.txt`。中文路径下先设 `PYTHONIOENCODING=utf-8`：
+
+```bash
+$env:PYTHONIOENCODING='utf-8'
+python _extract/author_theory_arc.py --uin 2778807491 -o 其他/FrozenHeart冰学观发展史.md
+```
+
+JSON 默认 `_extract/data/author_<uin>.json`（`data/` gitignore）。`-o` 相对 `饮茶室QA/`。显示名从 JSONL `sender.name` 众数解析；2778807491 是 FrozenHeart。
 
 格式化与检查（在 ``）：
 

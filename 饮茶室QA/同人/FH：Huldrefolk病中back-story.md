@@ -57,5 +57,5 @@ Elsa sighed. " I thought I'd deal with it on my own, without getting anyone else
 全程无车请放心食用
 
 > *2020-11-07 12:55:57  FrozenHeart*
-> *↪ 急急急急急急：这是啥？*
+> *↪ JU：这是啥？*
 @Justin  就着馄饨那张图扩写出来的back-story啊/斜眼笑

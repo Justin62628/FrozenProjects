@@ -1,0 +1,4 @@
+interface:
+  display_name: "Source-Grounded Chat Archive"
+  short_description: "Extract chat archives into traceable original-text notes"
+  default_prompt: "Use $source-grounded-chat-archive to extract source messages, reconstruct adjacent sessions, and write original-text-first archive notes."
