@@ -1,2 +1,16 @@
+---
+title: FH：娜雕解冻分析
+area: 冰学独立理论与分析
+source: "[[饮茶室QA/_source/饮茶室QA-原文]]"
+tags:
+  - type/ref
+  - area/frozen
+related:
+  - "[[饮茶室QA/核心/核心FAQ]]"
+  - "[[饮茶室QA/核心/FrozenHeart语录]]"
+  - "[[饮茶室QA/冰学独立理论与分析/新约：娜雕解冻分析]]"
+---
+
+# FH：娜雕解冻分析
 
 关于F1如何解冻这里我在20年的理论里写到过一段：从essential guide的示意还有剧本的暗示来看，真正thawed Anna的 act肯定指她为姐姐的牺牲，但从一个官网的Quiz的问题说who saved Anna，答案是the sisters saved each other. 另外，Anna并不是挡完剑立刻就开化了，而是她姐在身上哭了一会儿才化，然后化开后那缕白发也没了。然后从心理和意义上，Anna是始终如一的love，而真正心理上有变化的是Elsa，她意识到即便自己几乎毁灭了一切真正意义上成了一个monster都有人爱她爱她的全部不论是魔法还是她这个人，这时姐妹之间才真正意识到彼此对对方的爱都有多深，这个bond才算完全完整，而且在这之后一切Elsa冻结的东西都在她消除对自己魔法的恐惧后都让她自己解冻了。说这个act of true love是相互的，才最终解冻我觉得更有意义。

@@ -11,14 +11,10 @@
             "id": "d81b49de9d13dd1a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "饮茶室QA/冰学讨论/Elsa该不该永生.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Elsa该不该永生"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ]
@@ -55,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "allan作为类创世神的定位确实可以选择让第五灵传承下去但这对其利益来说完全不如让Elsa永生稳定的多，这个位置的权限很大一旦下一任不靠谱会导致非常严重的后果。",
+                "query": "亡，",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,8 +75,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -100,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "饮茶室QA/冰学讨论/Elsa该不该永生.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "饮茶室QA/冰学讨论/Elsa该不该永生.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -162,7 +155,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "饮茶室QA/冰学讨论/Elsa该不该永生.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -191,42 +183,42 @@
   },
   "active": "d81b49de9d13dd1a",
   "lastOpenFiles": [
-    "饮茶室QA/其他/奇怪同人.md",
-    "饮茶室QA/其他/游鱼语录.md",
-    "饮茶室QA/冰学讨论/早期关于叙事质感的讨论.md",
-    "饮茶室QA/冰学讨论/F2结尾第五灵的必要性.md",
-    "饮茶室QA/_source/饮茶室QA-原文.md",
-    "饮茶室QA/核心/FrozenHeart语录.md",
-    "饮茶室QA/冰学讨论/JU：先看DS还是先看PN.md",
-    "饮茶室QA/冰学独立理论与分析/Dem：阿村军队相关.md",
-    "饮茶室QA/核心/JU：冰学演化史.md",
-    "饮茶室QA/核心/核心FAQ.md",
-    "饮茶室QA/冰学独立理论与分析/土豆：Elsa的锁.md",
-    "饮茶室QA/冰学独立理论与分析/土豆：莎雕分析.md",
-    "饮茶室QA/冰学独立理论与分析/游鱼：《Coronation Day》对冰学的启示.md",
-    "饮茶室QA/冰学讨论/未命名.md",
-    "饮茶室QA/冰学讨论/秘密会议之土豆批斗Klein：.md",
-    "饮茶室QA/冰学独立理论与分析/JU：莎雕分析.md",
-    "饮茶室QA/冰学独立理论与分析/纳西妲：莎雕神学分析.md",
-    "饮茶室QA/核心/饮茶室是干嘛的.md",
-    "饮茶室QA/核心/冰学发展简史.md",
-    "饮茶室QA/核心/常见缩写.md",
-    "饮茶室QA/冰学讨论/FH莎雕分析的局限性讨论.md",
-    "饮茶室QA/冰学讨论/Ahtohallan主体性.md",
-    "饮茶室QA/冰学独立理论与分析/FH：莎雕分析.md",
-    "饮茶室QA/冰学独立理论与分析/新约：娜雕解冻分析.md",
-    "饮茶室QA/冰学独立理论与分析/FH：娜雕解冻分析.md",
     "饮茶室QA/测试集：FH的欠债/土豆的问题.md",
-    "饮茶室QA/测试集：FH的欠债",
-    "Pasted image 20260822082623.png",
-    "饮茶室QA/_extract/copy_range.py",
-    "饮茶室QA/_extract/data/decisions.json",
-    "饮茶室QA/_extract/data/candidates.tmp",
-    "饮茶室QA/_extract/__pycache__/review_server.cpython-311.pyc",
-    "饮茶室QA/_extract/__pycache__/extract_fragments.cpython-311.pyc",
-    "饮茶室QA/_extract/__pycache__",
-    "饮茶室QA/_extract/data/candidates.json",
-    "饮茶室QA/_extract/review_server.py",
-    "饮茶室QA/_extract/data"
+    "NOTE-QQChat-JSONL.md",
+    "nono哒yo.md",
+    "饮茶室QA/冰学讨论/第五灵考核.md",
+    "饮茶室QA/_extract/_find_needles2.py",
+    "饮茶室QA/_extract/_find_needles.py",
+    "饮茶室QA/_extract/_sum_stamp.py",
+    "饮茶室QA/_extract/data/stamp_report.json",
+    "饮茶室QA/冰学独立理论与分析/FH：植物人假设.md",
+    "饮茶室QA/冰学独立理论与分析/FH：双向轮回假设.md",
+    "饮茶室QA/冰学独立理论与分析/FH：没事干却离开会崩人设.md",
+    "饮茶室QA/冰学独立理论与分析/FH：Ahtohallan是四灵之母.md",
+    "饮茶室QA/冰学独立理论与分析/FH：F1地牢与Hans.md",
+    "饮茶室QA/冰学独立理论与分析/FH：自闭十三年与冰宫.md",
+    "饮茶室QA/冰学独立理论与分析/FH：FF是F2的铺垫.md",
+    "饮茶室QA/冰学独立理论与分析/FH：双面动机与PN补全.md",
+    "饮茶室QA/冰学独立理论与分析/FH：Fear vs Love.md",
+    "饮茶室QA/冰学独立理论与分析/FH：F2姐妹错位.md",
+    "饮茶室QA/冰学独立理论与分析/FH：反对JE.md",
+    "饮茶室QA/冰学独立理论与分析/FH：Love is permanent.md",
+    "饮茶室QA/冰学独立理论与分析/FH：自闭期必须保持信息差.md",
+    "饮茶室QA/冰学独立理论与分析/FH：EA不基于欲望的真爱.md",
+    "饮茶室QA/冰学独立理论与分析/FH：魔法是诅咒还是恩赐.md",
+    "饮茶室QA/冰学独立理论与分析/FH：完整的灵也是完整的人.md",
+    "饮茶室QA/冰学独立理论与分析/FH：女王身份不是束缚.md",
+    "饮茶室QA/_extract/_one_shot_split_fm.py",
+    "饮茶室QA/_extract/stamp_times.py",
+    "饮茶室QA/核心/FrozenHeart语录.md",
+    "饮茶室QA/_extract/_fm_scan.json",
+    "饮茶室QA/_extract/_tmp_patch_dec.py",
+    "饮茶室QA/冰学讨论/Anna死后记忆雪人.md",
+    "饮茶室QA/_extract/_tmp_out/shouming.md",
+    "饮茶室QA/_extract/_tmp_out/snowman.md",
+    "饮茶室QA/_extract/_tmp_findids.py",
+    "饮茶室QA/_extract/_tmp_out/athl_vs_ice.md",
+    "饮茶室QA/_extract/_tmp_others.py",
+    "Pasted image 20260822082623.png"
   ]
 }

@@ -26,3 +26,4 @@ updated: 2026-08-22
 - 2026-08-22：补充 README（规范、踩坑、理论提取约定）
 - 2026-08-22：记录 QQ JSONL 字段（回复链、senderUid / senderUin）→ [[NOTE-QQChat-JSONL]]
 - 2026-08-22：主源改为两群 chunked 导出；跨群是合并转发（uid+时间对齐）；筛选脚本 `_extract/`
+- 2026-08-22：未评分 candidates 归并入子笔记（FH 语录 / 讨论 / 独立理论）

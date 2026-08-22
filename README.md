@@ -77,6 +77,15 @@ python _extract/copy_range.py "E:\Library\Documents\QQChatExporter\exports\group
 
 可选：`-o slice.md` 同时落盘，`--print` 打到 stdout，`--no-clipboard` 不写剪贴板，`--contains` 改成子串匹配。中文路径下先设 `PYTHONIOENCODING=utf-8`。
 
+给已归档笔记补原发送时间（blockquote / `谁：` 发言；散文段只写 YAML `time_start`/`time_end` 或「出处时间」）。先精确匹配 `content.text`，唯一子串兜底；歧义不猜。已有 `> *YYYY-MM-DD HH:mm:ss` 的块不动：
+
+```bash
+python _extract/stamp_times.py 核心 冰学独立理论与分析 冰学讨论 其他 --dry-run
+python _extract/stamp_times.py 核心 冰学独立理论与分析 冰学讨论 其他 -o _extract/data/stamp_report.json
+```
+
+默认饮茶室 + 晚宴两份 chunked JSONL；`--tea` / `--klein` 可改路径。
+
 格式化与检查（在 ``）：
 
 ```bash

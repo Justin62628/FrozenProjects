@@ -56,3 +56,9 @@ Elsa那个"人体彩绘"是淡蓝色，可以说是她的魔法本色，也寓�
 Elsa看到Iduna的影像后含泪低声说了一嘴mother其实是意识到一直引导自己的the voice是妈妈的声音，母亲虽逝，但留下的线索却一直在协助自己
 
 我之前写的SY分析几乎完全是按她寻找自我这个目的来分析的，还应该加上另一个。SY里Elsa最后一句Show yourself是对着Ahtohallan的墙唱的，这句的含义结合后面她的动作可推出这里的you不再指the voice, 也不再指自己，而是意味着让这个truth, 这个Secret显现出来。
+
+## 五根冰柱（FJZ 补缺）
+
+I have always been so different这里Elsa造冰柱搭桥，原文分析曾写「暂时没想出具体含义」。2025-08 FJZ 给出：5 个柱子对应过去最重的 5 次 trauma，从压在身上的山变成拥抱两面、成为第五灵的垫脚石。FH 认账：filled in the final piece of the puzzle，和歌词 I have always been so different 对得上，difference 从 curse 变成垫脚石。
+
+新约异议：只盯「五」根太宽，Anna 冻成冰、冰宫差点杀死追兵冲击力更大；符号学里 5 也可以是连接/平衡/抉择。FJZ 小红书笔记：<http://xhslink.com/m/4NocZv4S72F>

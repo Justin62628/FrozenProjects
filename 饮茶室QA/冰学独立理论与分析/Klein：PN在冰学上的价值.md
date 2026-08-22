@@ -9,6 +9,8 @@ tags:
 related:
   - "[[FH：双桥理论]]"
   - "[[Klein：F2常见问题与解答]]"
+  - "[[饮茶室QA/冰学讨论/PN的北地]]"
+  - "[[饮茶室QA/冰学讨论/Ahtohallan主体性]]"
 ---
 
 # Klein: PN在冰学上的价值
@@ -32,3 +34,11 @@ Polar Nights 作为冰雪官方小说中，一本讲述 F2 之后故事的小说
 ![img](../assets/Klein-PN-在冰学上的价值-02.png)
 
 这是 PN 这本书的结尾，Elsa 从阿塔霍兰拉出了一个记忆，当作礼物送给了 Anna。这段记忆是 EA 的父母所说的，他们绝对相信 EA 姐妹，特别是相信 Anna，在 Elsa 需要的时候，Anna 绝对会在她身边支持她，而 Anna 也确实做到了。这段文字相当于EA 一家四口隔空团聚了一次。F1 所带给我们的那种感动又回来了。F1 中的“True Love”在此刻展现的又淋漓尽致。为什么说PN 是神？这就是理由！在弥补 F2 问题的同时，又带给我们 F1最原始的感动。
+
+## FH 点评（不要把 PN 写成 F2 的全面翻案）
+
+FrozenHeart：PN这篇还是写的有些太主观太极端了，F2的结尾公认存在刻画真空不过也不至于说Elsa完全ooc的啊，I took an oath to always do what is best for Arendelle这句就能表明立场了，PN做的是给这句补上具体刻画。然后A place of our own的删减回收也应该写一下相对于原删减，这个片段出现在这个时刻的合理性，以及原片段是Arendelle冲毁后Elsa还要离开才真正ooc。
+
+不过其实反过来说Dark Sea那块是真没法带Anna一起行动，不论是交战Nokk还是进Ahtohallan Anna都去不了的，把Anna留在安全地带有任何问题再来想办法支援其实是最好的安排。
+
+主线就是个山寨版FOS，而且Draugr能抑制Elsa魔法还能干涉Ahtohallan的记忆投射导致的战力崩坏这个头疼的问题，真没觉得好吃。最好吃的就是这碟醋和小菜（EA糖）。

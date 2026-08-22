@@ -1,3 +1,20 @@
+---
+title: 土豆：Elsa的锁
+area: 冰学独立理论与分析
+source: 饮茶室群聊
+updated: 2026-08-22
+time_start: 2024-11-20 20:34:12
+time_end: 2024-11-20 20:34:12
+tags:
+  - type/ref
+  - area/frozen
+related:
+  - "[[饮茶室QA/冰学讨论/冰二的刻画缺失]]"
+  - "[[饮茶室QA/核心/FrozenHeart语录]]"
+---
+
+# 土豆：Elsa的锁
+
 F1及其衍生物到此告一段落，而接下来就到了续集阶段。
 
 
@@ -29,3 +46,9 @@ F1及其衍生物到此告一段落，而接下来就到了续集阶段。
 
 
 这件事情的弊端在FOS（Forest of Shadow暗影森林，含部分主旨剧透）这本官方小说里面爆发。灾难来临时，面对很大的压力，Elsa内心逐渐出现裂痕——她扛不住了。最后这件事情以一个相对平和的结局结束，Elsa找到了平衡，在爱她的人的开导下逐渐学会了放手。她不用那样每件事都以一己之力追求完美，不用把所有东西揽在自己身上，因为也有人爱她，可以帮助她。
+
+## 续：FOS 梦魇不是 OOC
+
+发粪涂墙的🥔 引 FOS：Suddenly,Anna could see into Elsa's nightmare:the endless meetings that Elsa felt awkward leading,not knowing what to say to people after having had very little social interaction for most of her life.……her quietness wasn't composed thinking,but a deer-in-the-path-of-an-arrow
+
+FrozenHeart：我不觉得这个有问题，这是在梦魇状态下被夸张化的描述，但对于她的实际情况也没差那么多……13年CDF的功夫不是白练的。她表面上看起来完美到Anna甚至都认为姐姐如此完美都用不到自己了。回到你认为我存在的漏洞，没错如果有问题哪怕伤害到自己牺牲自己她都会在所不惜的去解决，但这个问题不一样，如果证实了她就是个对Arendelle 的curse那相当于否认了她自己的存在价值。
