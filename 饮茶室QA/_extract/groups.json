@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "key": "tea",
+      "name": "冰学三点饮茶室",
+      "path": "E:\\Library\\Documents\\QQChatExporter\\exports\\group_冰学三点饮茶室_732870642_20260822_042107409_chunked_jsonl.zip",
+      "primary": true
+    },
+    {
+      "key": "qitan",
+      "name": "❄️冰学奇谈会议室",
+      "path": "E:\\Library\\Documents\\QQChatExporter\\exports\\group_❄️冰学奇谈会议室_1032223756_20260822_043120968_chunked_jsonl.zip",
+      "primary": true
+    },
+    {
+      "key": "klein",
+      "name": "克莱恩家的晚宴",
+      "path": "E:\\Library\\Documents\\QQChatExporter\\exports\\group_克莱恩家的晚宴_833325688_20260822_060426420_chunked_jsonl.zip",
+      "primary": false
+    }
+  ]
+}

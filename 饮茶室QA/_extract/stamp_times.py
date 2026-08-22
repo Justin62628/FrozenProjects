@@ -21,15 +21,9 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from jsonl_io import add_group_args, iter_jsonl_lines, load_group_specs
+
 HERE = Path(__file__).resolve().parent
-TEA = Path(
-    r"E:\Library\Documents\QQChatExporter\exports"
-    r"\group_冰学三点饮茶室_732870642_20260822_060117249_chunked_jsonl"
-)
-KLEIN = Path(
-    r"E:\Library\Documents\QQChatExporter\exports"
-    r"\group_克莱恩家的晚宴_833325688_20260822_060426420_chunked_jsonl"
-)
 
 CST = timezone(timedelta(hours=8))
 IMG_RE = re.compile(r"\[图片(?::[^\]]*)?\]")
@@ -60,21 +54,6 @@ SKIP_PREFIX = (
 )
 MIN_NEEDLE = 20
 PREFILTER_LEN = 48
-
-
-def resolve_jsonls(root: Path) -> list[Path]:
-    root = root.expanduser().resolve()
-    if root.is_file() and root.suffix.lower() == ".jsonl":
-        return [root]
-    chunks = root / "chunks"
-    if chunks.is_dir():
-        files = sorted(chunks.glob("c*.jsonl"))
-        if files:
-            return files
-    files = sorted(p for p in root.glob("*.jsonl") if p.is_file())
-    if files:
-        return files
-    raise SystemExit(f"找不到 jsonl：{root}")
 
 
 def msg_text(raw: dict) -> str:
@@ -265,56 +244,54 @@ def prefilter_key(text: str) -> str:
 
 
 class JsonlIndex:
-    def __init__(self, folders: list[Path]) -> None:
-        self.files: list[Path] = []
-        for folder in folders:
-            if folder.exists():
-                self.files.extend(resolve_jsonls(folder))
+    def __init__(self, sources: list[Path]) -> None:
+        self.sources: list[Path] = []
+        for src in sources:
+            src = src.expanduser()
+            if src.exists():
+                self.sources.append(src)
             else:
-                print(f"警告：JSONL 目录不存在 {folder}", file=sys.stderr)
+                print(f"警告：JSONL 源不存在 {src}", file=sys.stderr)
 
     def search(self, needles: list[str]) -> dict[str, list[dict]]:
         """Return needle -> list of {time, sender, exact, text}."""
         if not needles:
             return {}
         keys = [(n, prefilter_key(n)) for n in needles]
-        # unique prefilters for raw-line scan
         raw_needles = {k for _, k in keys if k}
         hits: dict[str, list[dict]] = defaultdict(list)
         if not raw_needles:
             return hits
 
-        for fp in self.files:
-            with fp.open("r", encoding="utf-8") as f:
-                for line in f:
-                    if not any(k in line for k in raw_needles):
+        for src in self.sources:
+            for line in iter_jsonl_lines(src):
+                if not any(k in line for k in raw_needles):
+                    continue
+                try:
+                    raw = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if raw.get("recalled"):
+                    continue
+                body = normalize_body(msg_text(raw))
+                if not body:
+                    continue
+                when = fmt_time(raw)
+                who = sender_name(raw)
+                if not when:
+                    continue
+                rec = {
+                    "time": when,
+                    "sender": who,
+                    "text": body,
+                }
+                for needle, key in keys:
+                    if key not in line and key not in body:
                         continue
-                    try:
-                        raw = json.loads(line)
-                    except json.JSONDecodeError:
-                        continue
-                    if raw.get("recalled"):
-                        continue
-                    body = normalize_body(msg_text(raw))
-                    if not body:
-                        continue
-                    when = fmt_time(raw)
-                    who = sender_name(raw)
-                    if not when:
-                        continue
-                    rec = {
-                        "time": when,
-                        "sender": who,
-                        "text": body,
-                    }
-                    for needle, key in keys:
-                        if key not in line and key not in body:
-                            continue
-                        exact = body == needle
-                        contains = (not exact) and (needle in body or body in needle)
-                        if exact or contains:
-                            hits[needle].append({**rec, "exact": exact})
-        # dedupe same time+sender+text
+                    exact = body == needle
+                    contains = (not exact) and (needle in body or body in needle)
+                    if exact or contains:
+                        hits[needle].append({**rec, "exact": exact})
         for needle, rows in hits.items():
             uniq = []
             seen = set()
@@ -527,17 +504,18 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("paths", nargs="+", type=Path, help=".md 或文件夹")
     p.add_argument("--dry-run", action="store_true", help="不写回，只出报告")
     p.add_argument("-o", "--out", type=Path, help="把报告写成 JSON")
+    add_group_args(p)
     p.add_argument(
         "--tea",
         type=Path,
-        default=TEA,
-        help="饮茶室 chunked_jsonl 目录",
+        default=None,
+        help="额外饮茶室导出（目录或 zip；兼容旧开关）",
     )
     p.add_argument(
         "--klein",
         type=Path,
-        default=KLEIN,
-        help="克莱恩家的晚宴 chunked_jsonl 目录",
+        default=None,
+        help="额外晚宴导出（目录或 zip；兼容旧开关）",
     )
     args = p.parse_args(argv)
 
@@ -545,7 +523,13 @@ def main(argv: list[str] | None = None) -> int:
     if not files:
         raise SystemExit("没有可处理的 .md")
 
-    index = JsonlIndex([args.tea, args.klein])
+    specs = load_group_specs(args.config, extra_paths=args.group)
+    roots = [spec["root"] for spec in specs]
+    if args.tea:
+        roots.append(args.tea)
+    if args.klein:
+        roots.append(args.klein)
+    index = JsonlIndex(roots)
     prepared: list[tuple[Path, str, str, list[dict]]] = []
     all_needles: list[str] = []
     for fp in files:

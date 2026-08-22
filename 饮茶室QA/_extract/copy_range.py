@@ -2,13 +2,14 @@
 """Copy formatted messages between two records in a chunked QQ JSONL export.
 
 Usage:
-    python copy_range.py FOLDER --start "全文" --end "全文"
-    python copy_range.py FOLDER -s "全文" -e "全文" -o slice.md
-    python copy_range.py FOLDER -s "全文" -e "全文" --print --no-clipboard
+    python copy_range.py PATH --start "全文" --end "全文"
+    python copy_range.py PATH -s "全文" -e "全文" -o slice.md
+    python copy_range.py PATH -s "全文" -e "全文" --print --no-clipboard
 
-FOLDER is the QQChatExporter chunked_jsonl directory (contains chunks/c*.jsonl).
-Start/end match the record's complete content.text (strip 后全等). 两端都包含。
-默认写入剪贴板；摘要打到 stderr。
+PATH is a QQChatExporter `*_chunked_jsonl` directory, a `.zip` of that export,
+or a single `.jsonl`. Zip members named like `chunks/c*.jsonl` are streamed
+(no unzip). Start/end match the record's complete content.text (strip 后全等).
+两端都包含。默认写入剪贴板；摘要打到 stderr。
 """
 
 from __future__ import annotations
@@ -21,23 +22,20 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from jsonl_io import iter_jsonl_lines, list_chunk_labels
+
 CST = timezone(timedelta(hours=8))
 IMG_RE = re.compile(r"\[图片(?::[^\]]*)?\]")
 
 
-def resolve_jsonls(root: Path) -> list[Path]:
-    root = root.expanduser().resolve()
-    if root.is_file() and root.suffix.lower() == ".jsonl":
-        return [root]
-    chunks = root / "chunks"
-    if chunks.is_dir():
-        files = sorted(chunks.glob("c*.jsonl"))
-        if files:
-            return files
-    files = sorted(p for p in root.glob("*.jsonl") if p.is_file())
-    if files:
-        return files
-    raise SystemExit(f"找不到 jsonl：{root}")
+def resolve_source(root: Path) -> Path:
+    root = root.expanduser()
+    if not root.exists():
+        raise SystemExit(f"找不到导出：{root}")
+    labels = list_chunk_labels(root)
+    if not labels and not (root.is_file() and root.suffix.lower() == ".jsonl"):
+        raise SystemExit(f"找不到 jsonl（目录或 zip 内 chunks/c*.jsonl）：{root}")
+    return root
 
 
 def msg_text(raw: dict) -> str:
@@ -175,7 +173,7 @@ def format_slice(rows: list[dict], folder: Path) -> tuple[str, int]:
 
 
 def find_range(
-    files: list[Path],
+    source: Path,
     start: str,
     end: str,
     contains: bool,
@@ -188,38 +186,36 @@ def find_range(
     start_seen_in_collect = False
 
     safe_skip = '"' not in start and "\\" not in start
-    for fp in files:
-        with fp.open("r", encoding="utf-8") as f:
-            for line in f:
-                if not line.strip():
-                    continue
-                if not collecting and safe_skip and start not in line:
-                    continue
-                raw = json.loads(line)
-                text = msg_text(raw)
-                hit_start = start in text if contains else text == start
-                hit_end = end in text if contains else text == end
-                if not collecting:
-                    if not hit_start:
-                        continue
-                    start_n += 1
-                    if start_n < nth_start:
-                        continue
-                    collecting = True
-                    rows.append(raw)
-                    if same:
-                        start_seen_in_collect = True
-                        continue
-                    if hit_end:
-                        return rows
-                    continue
-                rows.append(raw)
-                if same:
-                    if hit_end and start_seen_in_collect:
-                        return rows
-                    continue
-                if hit_end:
-                    return rows
+    for line in iter_jsonl_lines(source):
+        if not line.strip():
+            continue
+        if not collecting and safe_skip and start not in line:
+            continue
+        raw = json.loads(line)
+        text = msg_text(raw)
+        hit_start = start in text if contains else text == start
+        hit_end = end in text if contains else text == end
+        if not collecting:
+            if not hit_start:
+                continue
+            start_n += 1
+            if start_n < nth_start:
+                continue
+            collecting = True
+            rows.append(raw)
+            if same:
+                start_seen_in_collect = True
+                continue
+            if hit_end:
+                return rows
+            continue
+        rows.append(raw)
+        if same:
+            if hit_end and start_seen_in_collect:
+                return rows
+            continue
+        if hit_end:
+            return rows
 
     if not collecting:
         raise SystemExit(f"找不到起始记录（exact={'off' if contains else 'on'}）：{start!r}")
@@ -272,7 +268,11 @@ def copy_clipboard(text: str) -> None:
 
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description="按起止全文抽取 JSONL 记录并复制")
-    p.add_argument("folder", type=Path, help="chunked_jsonl 目录或单个 .jsonl")
+    p.add_argument(
+        "folder",
+        type=Path,
+        help="chunked_jsonl 目录、同名 .zip，或单个 .jsonl",
+    )
     p.add_argument("--start", "-s", required=True, help="起始记录的完全文本")
     p.add_argument("--end", "-e", required=True, help="结束记录的完全文本")
     p.add_argument("-o", "--out", type=Path, help="同时写入该文件")
@@ -289,9 +289,9 @@ def main(argv: list[str] | None = None) -> int:
     if args.nth_start < 1:
         raise SystemExit("--nth-start 必须 ≥ 1")
 
-    files = resolve_jsonls(args.folder)
-    rows = find_range(files, start, end, args.contains, args.nth_start)
-    text, n_out = format_slice(rows, args.folder.resolve())
+    source = resolve_source(args.folder)
+    rows = find_range(source, start, end, args.contains, args.nth_start)
+    text, n_out = format_slice(rows, source)
 
     if args.out:
         args.out.parent.mkdir(parents=True, exist_ok=True)

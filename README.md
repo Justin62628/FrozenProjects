@@ -63,16 +63,19 @@ python extract_data_images.py path/to/note.md
 python split_qa_notes.py --dry-run
 python split_qa_notes.py --normalize-headings
 python _extract/extract_fragments.py
+python _extract/extract_fragments.py --group "E:\Library\Documents\QQChatExporter\exports\group_冰学三点饮茶室_732870642_20260822_042107409_chunked_jsonl.zip"
 python _extract/review_server.py
-python _extract/copy_range.py FOLDER --start "起始全文" --end "结束全文"
+python _extract/copy_range.py PATH --start "起始全文" --end "结束全文"
 ```
 
 群聊片段筛选：先跑 `extract_fragments.py` 写出 `_extract/data/candidates.json`，再开 `review_server.py` 人工标。判定存在 `_extract/data/decisions.json`，重跑提取不会覆盖已有判定（按 candidate id 对齐）。跨群靠合并转发，见 [[NOTE-QQChat-JSONL]]。
 
-按起止记录抽一段对话（默认复制到剪贴板；时间转北京时间；含两端）。发送头与被引用气泡写成 Markdown 引用+斜体；图片、撤回、空文本整段略过。`--start` / `--end` 必须是该条 `content.text` 的完全文本（去空白后全等）。FOLDER 是 QQChatExporter 的 `*_chunked_jsonl` 目录：
+群列表在 `_extract/groups.json`（`name` / `key` / `path` / `primary`）。`path` 可以是 `*_chunked_jsonl` 目录，或同名 `.zip`；脚本用 `zipfile` 流式读 `chunks/c*.jsonl`，不必先解压。`--group PATH` 可重复追加或覆盖。默认三份：饮茶室、❄️冰学奇谈会议室、克莱恩家的晚宴。
+
+按起止记录抽一段对话（默认复制到剪贴板；时间转北京时间；含两端）。发送头与被引用气泡写成 Markdown 引用+斜体；图片、撤回、空文本整段略过。`--start` / `--end` 必须是该条 `content.text` 的完全文本（去空白后全等）。PATH 是 QQChatExporter 的 `*_chunked_jsonl` 目录或 `.zip`：
 
 ```bash
-python _extract/copy_range.py "E:\Library\Documents\QQChatExporter\exports\group_冰学三点饮茶室_732870642_20260822_060117249_chunked_jsonl" --start "AT Field. Absolute Terror Field" --end "那块显然各有大神做了，也不管了"
+python _extract/copy_range.py "E:\Library\Documents\QQChatExporter\exports\group_冰学三点饮茶室_732870642_20260822_042107409_chunked_jsonl.zip" --start "AT Field. Absolute Terror Field" --end "那块显然各有大神做了，也不管了"
 ```
 
 可选：`-o slice.md` 同时落盘，`--print` 打到 stdout，`--no-clipboard` 不写剪贴板，`--contains` 改成子串匹配。中文路径下先设 `PYTHONIOENCODING=utf-8`。
@@ -84,7 +87,7 @@ python _extract/stamp_times.py 核心 冰学独立理论与分析 冰学讨论 �
 python _extract/stamp_times.py 核心 冰学独立理论与分析 冰学讨论 其他 -o _extract/data/stamp_report.json
 ```
 
-默认饮茶室 + 晚宴两份 chunked JSONL；`--tea` / `--klein` 可改路径。
+默认读 `_extract/groups.json` 里全部群（目录或 zip）；`--group PATH` 可追加，`--tea` / `--klein` 仍可用。
 
 格式化与检查（在 ``）：
 

@@ -18,8 +18,11 @@ RAG 主源是 QQChatExporter 的 **chunked 完整导出**（简化字段，合�
 
 | 群 | 路径 | 规模 |
 | --- | --- | --- |
-| 冰学三点饮茶室 `732870642` | `e:\Library\Documents\QQChatExporter\exports\group_冰学三点饮茶室_732870642_20260822_060117249_chunked_jsonl` | 315314 条，2024-05-09 → 2026-08-21，7 个 chunk |
-| 克莱恩家的晚宴 `833325688` | `e:\Library\Documents\QQChatExporter\exports\group_克莱恩家的晚宴_833325688_20260822_060426420_chunked_jsonl` | 153393 条，2025-05-02 → 2026-08-21，4 个 chunk |
+| 冰学三点饮茶室 `732870642` | `e:\Library\Documents\QQChatExporter\exports\group_冰学三点饮茶室_732870642_20260822_042107409_chunked_jsonl.zip` | 628751 条，2020-02-25 → 2026-08-22，13 个 chunk（提取主源） |
+| ❄️冰学奇谈会议室 `1032223756` | `e:\Library\Documents\QQChatExporter\exports\group_❄️冰学奇谈会议室_1032223756_20260822_043120968_chunked_jsonl.zip` | 93005 条，2020-02-20 → 2026-08-22，2 个 chunk |
+| 克莱恩家的晚宴 `833325688` | `e:\Library\Documents\QQChatExporter\exports\group_克莱恩家的晚宴_833325688_20260822_060426420_chunked_jsonl.zip` | 153393 条，2025-05-02 → 2026-08-21，4 个 chunk |
+
+提取脚本读 zip 内 `chunks/c*.jsonl`（及 `manifest.json`），不必先解压。文件名里的 ❄️ 是群名的一部分。旧饮茶室目录/zip `…060117249_chunked_jsonl`（315314 条，2024-05-09 → 2026-08-21）已被上面的 `042107409` zip 取代，磁盘上可留着当备份，不要当提取主源。
 
 chunked 一行一条，字段是 `id` / `seq` / `timestamp`（毫秒）/ `sender` / `type` / `content` / `recalled` / `system`。回复在 `content.elements` 里 `type: reply`（必有 `referencedMessageId`）。文件在 `type: file` 的 `filename`。合并转发在 `type: forward`，**嵌套 `data.messages` 有全文**（本库实测最多 100 条，QQ 合并上限）。
 

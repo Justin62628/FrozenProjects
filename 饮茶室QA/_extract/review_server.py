@@ -5,7 +5,9 @@ Usage:
     python review_server.py
     python review_server.py --port 8765
 
-Decisions persist in data/decisions.json (not overwritten by extract).
+List defaults to oldest-first (time_start ascending). Filters and
+/api/decisions are unchanged. Decisions persist in data/decisions.json
+(not overwritten by extract).
 """
 
 from __future__ import annotations
@@ -72,6 +74,11 @@ mark { background:#53480a; color:#ffe9a0; padding:0 2px; }
     <option value="reject">扔掉</option>
     <option value="later">待定</option>
   </select>
+  <select id="sort">
+    <option value="time_asc" selected>时间↑ 旧→新</option>
+    <option value="time_desc">时间↓ 新→旧</option>
+    <option value="score_desc">分数↓</option>
+  </select>
   <input id="q" type="search" placeholder="搜索关键词" style="width:220px;background:#1a1a1a;color:var(--fg);border:1px solid #444;padding:6px 8px;">
   <span id="pos" class="muted"></span>
   <button class="pri" data-v="keep_theory">理论 1</button>
@@ -99,9 +106,13 @@ function hay(c) {
   for (const m of c.messages||[]) parts.push(m.text, m.name);
   return parts.join('\n').toLowerCase();
 }
+function timeKey(c) {
+  return c.time_start || c.time_end || '';
+}
 function apply() {
   const f = $('filter').value;
   const q = ($('q').value || '').trim().toLowerCase();
+  const s = ($('sort') && $('sort').value) || 'time_asc';
   view = cands.filter(c => {
     const v = (decisions[c.id]||{}).verdict || '';
     if (f==='unscored') { if (v) return false; }
@@ -112,6 +123,14 @@ function apply() {
     else if (v!==f) return false;
     if (q && !hay(c).includes(q)) return false;
     return true;
+  });
+  view.sort((a, b) => {
+    if (s === 'score_desc') {
+      const d = (b.score || 0) - (a.score || 0);
+      return d || timeKey(a).localeCompare(timeKey(b));
+    }
+    if (s === 'time_desc') return timeKey(b).localeCompare(timeKey(a));
+    return timeKey(a).localeCompare(timeKey(b));
   });
   if (idx >= view.length) idx = Math.max(0, view.length-1);
   renderList(); render();
@@ -174,6 +193,7 @@ async function decide(verdict) {
   else { idx = Math.min(idx+1, Math.max(0, view.length-1)); renderList(); render(); }
 }
 $('filter').onchange = () => { idx=0; apply(); };
+$('sort').onchange = () => { idx=0; apply(); };
 $('q').oninput = () => { idx=0; apply(); };
 $('list').onclick = e => {
   const b = e.target.closest('[data-i]');

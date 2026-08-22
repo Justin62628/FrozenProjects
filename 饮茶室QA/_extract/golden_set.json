@@ -1,0 +1,80 @@
+{
+  "entries": [
+    {
+      "id": "qitan:theory:6823511556749379226",
+      "needles": [
+        "The Northuldra follow magic",
+        "defy the will of a king"
+      ],
+      "group": "qitan",
+      "dest_hint": "饮茶室QA/冰学独立理论与分析/FH：Runeard对魔法的不信任",
+      "verdict": "keep_theory",
+      "notes": "2020-05-06 07:49:47 FrozenHeart · ❄️冰学奇谈会议室. Runeard Fear vs Elsa F1 Fear / dam as glove.",
+      "time_start": "2020-05-06 07:49:47",
+      "msg_id": "6823511556749379226"
+    },
+    {
+      "id": "tea:theory:6927287030091778109",
+      "needles": [
+        "@Vivian 你要的解释",
+        "The wind is restless",
+        "第一次听到the voice"
+      ],
+      "group": "tea",
+      "dest_hint": "饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice",
+      "verdict": "keep_theory",
+      "notes": "2021-02-09 23:31:37 FrozenHeart · 冰学三点饮茶室. STNC wind vs Charades first hearing.",
+      "time_start": "2021-02-09 23:31:37",
+      "msg_id": "6927287030091778109"
+    },
+    {
+      "id": "qitan:theory:6883975196228468357",
+      "needles": [
+        "damn.......我这次分析竟然重新回到了那个F1的终极问题"
+      ],
+      "group": "qitan",
+      "dest_hint": "饮茶室QA/冰学独立理论与分析/FH：娜雕解冻分析",
+      "verdict": "keep_theory",
+      "notes": "2020-10-16 06:19:35 FrozenHeart · ❄️冰学奇谈会议室. Original F1 thaw / act of true love mechanism.",
+      "time_start": "2020-10-16 06:19:35",
+      "msg_id": "6883975196228468357"
+    },
+    {
+      "id": "tea:theory:7557129120357520093",
+      "needles": [
+        "关于F1如何解冻这里我在20年的理论里写到过一段"
+      ],
+      "group": "tea",
+      "dest_hint": "饮茶室QA/冰学独立理论与分析/FH：娜雕解冻分析",
+      "verdict": "keep_theory",
+      "notes": "2025-03-18 06:40:37 FrozenHeart · 冰学三点饮茶室. Recap pointer to the 2020 thaw essay. Currently nested as cited inside tea:theory:7482909288508735862; extractor should still keep/force this seed.",
+      "time_start": "2025-03-18 06:40:37",
+      "msg_id": "7557129120357520093"
+    },
+    {
+      "id": "tea:theory:6892239508502194841",
+      "needles": [
+        "Interesting fanart. Let's see whether we can make up a good back-story for it."
+      ],
+      "group": "tea",
+      "dest_hint": "饮茶室QA/同人/FH：Huldrefolk病中back-story",
+      "verdict": "keep_discussion",
+      "notes": "2020-11-07 12:49:20 FrozenHeart · 冰学三点饮茶室. Fanfic starter on 莎士馄饨 fanart. Filed under 同人/.",
+      "time_start": "2020-11-07 12:49:20",
+      "msg_id": "6892239508502194841"
+    },
+    {
+      "id": "qitan:theory:6811379661291357857",
+      "needles": [
+        "本来这个凌晨就能把ITU弄透的",
+        "The wind is restless"
+      ],
+      "group": "qitan",
+      "dest_hint": "饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice",
+      "verdict": "keep_theory",
+      "notes": "2020-04-03 15:11:50 FrozenHeart · ❄️冰学奇谈会议室. Earlier full ITU dump; 2021 @Vivian restates points 1–2.",
+      "time_start": "2020-04-03 15:11:50",
+      "msg_id": "6811379661291357857"
+    }
+  ]
+}

@@ -11,10 +11,14 @@
             "id": "d81b49de9d13dd1a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "饮茶室QA/核心/JU：冰学演化史.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JU：冰学演化史"
             }
           }
         ]
@@ -51,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "亡，",
+                "query": "的事情一直对立，导致她有了两种人格，第二部",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "饮茶室QA/核心/JU：冰学演化史.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "饮茶室QA/核心/JU：冰学演化史.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -155,6 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "饮茶室QA/核心/JU：冰学演化史.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,42 +190,42 @@
   },
   "active": "d81b49de9d13dd1a",
   "lastOpenFiles": [
-    "饮茶室QA/测试集：FH的欠债/土豆的问题.md",
-    "NOTE-QQChat-JSONL.md",
-    "nono哒yo.md",
-    "饮茶室QA/冰学讨论/第五灵考核.md",
-    "饮茶室QA/_extract/_find_needles2.py",
-    "饮茶室QA/_extract/_find_needles.py",
-    "饮茶室QA/_extract/_sum_stamp.py",
-    "饮茶室QA/_extract/data/stamp_report.json",
-    "饮茶室QA/冰学独立理论与分析/FH：植物人假设.md",
-    "饮茶室QA/冰学独立理论与分析/FH：双向轮回假设.md",
-    "饮茶室QA/冰学独立理论与分析/FH：没事干却离开会崩人设.md",
-    "饮茶室QA/冰学独立理论与分析/FH：Ahtohallan是四灵之母.md",
-    "饮茶室QA/冰学独立理论与分析/FH：F1地牢与Hans.md",
-    "饮茶室QA/冰学独立理论与分析/FH：自闭十三年与冰宫.md",
-    "饮茶室QA/冰学独立理论与分析/FH：FF是F2的铺垫.md",
-    "饮茶室QA/冰学独立理论与分析/FH：双面动机与PN补全.md",
-    "饮茶室QA/冰学独立理论与分析/FH：Fear vs Love.md",
-    "饮茶室QA/冰学独立理论与分析/FH：F2姐妹错位.md",
-    "饮茶室QA/冰学独立理论与分析/FH：反对JE.md",
-    "饮茶室QA/冰学独立理论与分析/FH：Love is permanent.md",
-    "饮茶室QA/冰学独立理论与分析/FH：自闭期必须保持信息差.md",
-    "饮茶室QA/冰学独立理论与分析/FH：EA不基于欲望的真爱.md",
-    "饮茶室QA/冰学独立理论与分析/FH：魔法是诅咒还是恩赐.md",
-    "饮茶室QA/冰学独立理论与分析/FH：完整的灵也是完整的人.md",
-    "饮茶室QA/冰学独立理论与分析/FH：女王身份不是束缚.md",
-    "饮茶室QA/_extract/_one_shot_split_fm.py",
-    "饮茶室QA/_extract/stamp_times.py",
-    "饮茶室QA/核心/FrozenHeart语录.md",
-    "饮茶室QA/_extract/_fm_scan.json",
-    "饮茶室QA/_extract/_tmp_patch_dec.py",
-    "饮茶室QA/冰学讨论/Anna死后记忆雪人.md",
-    "饮茶室QA/_extract/_tmp_out/shouming.md",
-    "饮茶室QA/_extract/_tmp_out/snowman.md",
-    "饮茶室QA/_extract/_tmp_findids.py",
-    "饮茶室QA/_extract/_tmp_out/athl_vs_ice.md",
-    "饮茶室QA/_extract/_tmp_others.py",
+    "饮茶室QA/冰学讨论/官方小说读法：FOS与Frost Monster.md",
+    "饮茶室QA/核心/JU：冰学演化史.md",
+    "饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice.md",
+    "饮茶室QA/冰学独立理论与分析/纳西妲：叙事闭合与和声终止.md",
+    "饮茶室QA/_extract/_corpus_patch2.py",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_theory_7502392269696835339.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_theory_7690081352341945247.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/klein_discussion_7541742635693026833.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_theory_6975732510432996.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_discussion_6883124093216941121.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_7520157742210068128.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_theory_7409476223054358458.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_6934037639537970056.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/qitan_6811021872596920785.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_7666015293831196375.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_7654523159281874398.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_7717233106383678022.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_6863383047160386053.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_6952509821737284.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_6930127393823306048.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/qitan_6861835687095564028.md",
+    "饮茶室QA/_extract/data/_gapfill_dump/tea_6858235705375919022.md",
+    "饮茶室QA/_extract/data/_gapfill_gloss_hunt.json",
+    "饮茶室QA/_extract/_gapfill_gloss_hunt.py",
+    "饮茶室QA/_extract/data/_gapfill_apply_report.json",
+    "饮茶室QA/同人/FH：Elsa圣诞贺词.md",
+    "饮茶室QA/同人/FrozenXX：多年后安葬地.md",
+    "饮茶室QA/同人/Little Snow：The sky was awake.md",
+    "饮茶室QA/同人/FH：Our story began.md",
+    "饮茶室QA/同人/馄饨：Elsa的早晨.md",
+    "饮茶室QA/_extract/_corpus_apply.py",
+    "饮茶室QA/_extract/data/fix_lint_region.py",
+    "饮茶室QA/_extract/data/cleanup_cases.py",
+    "饮茶室QA/_extract/data/_gapfill_dump/_index.json",
+    "饮茶室QA/_extract/data/_gapfill_dump",
+    "饮茶室QA/_extract/data/_gapfill_hunt.json",
     "Pasted image 20260822082623.png"
   ]
 }

@@ -3,28 +3,29 @@
 
 Usage:
     python extract_fragments.py
+    python extract_fragments.py --config groups.json
+    python extract_fragments.py --group PATH [--group PATH ...]
 
 Writes data/candidates.json. Does not touch data/decisions.json.
+Groups come from groups.json (N dirs or zips) and optional --group PATH.
+Needles in golden_set.json (repo root of this folder) are never dropped:
+matching preview/body gets reason golden_set and a high score.
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 from pathlib import Path
 
+from jsonl_io import add_group_args, iter_raw, load_group_specs
+
 HERE = Path(__file__).resolve().parent
 DATA = HERE / "data"
 OUT = DATA / "candidates.json"
-
-TEA = Path(
-    r"E:\Library\Documents\QQChatExporter\exports"
-    r"\group_冰学三点饮茶室_732870642_20260822_060117249_chunked_jsonl"
-)
-KLEIN = Path(
-    r"E:\Library\Documents\QQChatExporter\exports"
-    r"\group_克莱恩家的晚宴_833325688_20260822_060426420_chunked_jsonl"
-)
+GOLDEN_PATH = HERE / "golden_set.json"
+GOLDEN_SCORE = 10_000
 
 # QQ 正文中位约 12 字；「比较长」按 ≥80 字（约 p99）。
 SILENCE_MS = 30 * 60 * 1000
@@ -51,10 +52,6 @@ TEA_SIGNAL = re.compile(
 URL_RE = re.compile(r"https?://\S+|b23\.tv/\S+")
 DOC_EXT = (".pdf", ".epub", ".doc", ".docx", ".txt", ".md")
 
-GROUPS = [
-    {"key": "tea", "name": "冰学三点饮茶室", "root": TEA, "primary": True},
-    {"key": "klein", "name": "克莱恩家的晚宴", "root": KLEIN, "primary": False},
-]
 
 
 def atomic_write(path: Path, obj) -> None:
@@ -62,15 +59,6 @@ def atomic_write(path: Path, obj) -> None:
     tmp = path.with_suffix(".tmp")
     tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp.replace(path)
-
-
-def iter_raw(root: Path):
-    for fp in sorted((root / "chunks").glob("c*.jsonl")):
-        with fp.open("r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if line:
-                    yield json.loads(line)
 
 
 def file_names(elements, into: list[str]) -> None:
@@ -182,12 +170,19 @@ def uid_ts_index(rows: list[dict]) -> dict[tuple[str, int], str]:
     return idx
 
 
-def match_nested(nested: list[dict], other: dict[tuple[str, int], str]) -> int:
-    n = 0
+def match_nested_by_group(
+    nested: list[dict], other: dict[tuple[str, int], str]
+) -> dict[str, int]:
+    counts: dict[str, int] = {}
     for m in nested:
         if m["uid"] and m["ts"] and (m["uid"], m["ts"]) in other:
-            n += 1
-    return n
+            src = other[(m["uid"], m["ts"])]
+            counts[src] = counts.get(src, 0) + 1
+    return counts
+
+
+def match_nested(nested: list[dict], other: dict[tuple[str, int], str]) -> int:
+    return sum(match_nested_by_group(nested, other).values())
 
 
 def public_msg(m: dict, role: str = "chat") -> dict:
@@ -376,6 +371,126 @@ def klein_ok(rows: list[dict], core: list[int], reasons: list[str]) -> bool:
     return bool(TEA_SIGNAL.search(blob))
 
 
+_GOLDEN_CACHE: list[dict] | None = None
+
+
+def load_golden_set() -> list[dict]:
+    global _GOLDEN_CACHE
+    if _GOLDEN_CACHE is not None:
+        return _GOLDEN_CACHE
+    if not GOLDEN_PATH.is_file():
+        _GOLDEN_CACHE = []
+        return _GOLDEN_CACHE
+    data = json.loads(GOLDEN_PATH.read_text(encoding="utf-8"))
+    if isinstance(data, list):
+        _GOLDEN_CACHE = data
+    else:
+        _GOLDEN_CACHE = list(data.get("entries") or [])
+    return _GOLDEN_CACHE
+
+
+def golden_needles(entry: dict) -> list[str]:
+    return [n for n in (entry.get("needles") or []) if n]
+
+
+def text_hits_needles(text: str, needles: list[str]) -> bool:
+    return any(n in text for n in needles)
+
+
+def candidate_blob(c: dict) -> str:
+    parts = [c.get("preview") or ""]
+    for m in c.get("messages") or []:
+        parts.append(m.get("text") or "")
+    return "\n".join(parts)
+
+
+def row_blob(m: dict) -> str:
+    return (m.get("body") or "") + "\n" + (m.get("text") or "")
+
+
+def golden_entries_for(group: str) -> list[dict]:
+    out = []
+    for g in load_golden_set():
+        if g.get("group") and g["group"] != group:
+            continue
+        if golden_needles(g):
+            out.append(g)
+    return out
+
+
+def golden_hit_rows(rows: list[dict], idxs: list[int], group: str) -> dict | None:
+    blobs = [row_blob(rows[i]) for i in idxs]
+    preferred = None
+    for g in load_golden_set():
+        needles = golden_needles(g)
+        if not any(text_hits_needles(b, needles) for b in blobs):
+            continue
+        if not g.get("group") or g["group"] == group:
+            return g
+        preferred = preferred or g
+    return preferred
+
+
+def force_golden_candidate(
+    spec: dict, rows: list[dict], i: int, other_idx: dict, golden: dict
+) -> dict:
+    kind = "discussion" if golden.get("verdict") == "keep_discussion" else "theory"
+    by_id = {m["id"]: j for j, m in enumerate(rows) if m["id"]}
+    core = [i]
+    parents, cites_old = cited_parents(rows, by_id, core)
+    follow = follow_replies(rows, by_id, {rows[x]["id"] for x in core}, core[-1])
+    before, after = locator_indices(rows, core)
+    reasons = ["golden_set"]
+    if cites_old:
+        reasons.append("cites_old")
+    cand = make_candidate(
+        kind,
+        spec,
+        rows,
+        core,
+        parents + follow + before + after,
+        reasons,
+        GOLDEN_SCORE,
+        other_idx,
+        {rows[x]["id"] for x in parents},
+        {rows[x]["id"] for x in before + after},
+    )
+    if golden.get("id"):
+        cand["id"] = golden["id"]
+    return cand
+
+
+def seal_golden_misses(
+    out: list[dict], spec: dict, rows: list[dict], other_idx: dict
+) -> None:
+    """Force-keep golden needles that never became a candidate."""
+    for g in golden_entries_for(spec["key"]):
+        needles = golden_needles(g)
+        if any(text_hits_needles(candidate_blob(c), needles) for c in out):
+            continue
+        for i, m in enumerate(rows):
+            if not text_hits_needles(row_blob(m), needles):
+                continue
+            out.append(force_golden_candidate(spec, rows, i, other_idx, g))
+            break
+
+
+def apply_golden_set(cands: list[dict]) -> None:
+    """Mark existing candidates that match a golden needle; never drop them."""
+    goldens = load_golden_set()
+    if not goldens:
+        return
+    for c in cands:
+        blob = candidate_blob(c)
+        for g in goldens:
+            if not text_hits_needles(blob, golden_needles(g)):
+                continue
+            if "golden_set" not in (c.get("reasons") or []):
+                c.setdefault("reasons", []).append("golden_set")
+            c["score"] = max(int(c.get("score") or 0), GOLDEN_SCORE)
+            break
+
+
 def make_candidate(
     kind: str,
     spec: dict,
@@ -404,44 +519,26 @@ def make_candidate(
             role = "chat"
         msgs.append(public_msg(m, role))
         if m["nested"]:
-            hit = match_nested(m["nested"], other_idx)
-            if hit:
-                src = "klein" if spec["key"] == "tea" else "tea"
-                cross.append(
-                    {
-                        "from": src,
-                        "title": m["fwd_title"],
-                        "nested": m["fwd_n"],
-                        "matched": hit,
-                    }
-                )
+            hits = match_nested_by_group(m["nested"], other_idx)
+            if hits:
+                for src, n_hit in hits.items():
+                    cross.append(
+                        {
+                            "from": src,
+                            "title": m["fwd_title"],
+                            "nested": m["fwd_n"],
+                            "matched": n_hit,
+                        }
+                    )
+            if hits or m["fwd_n"]:
                 for n in m["nested"]:
+                    src = spec["key"]
+                    if n["uid"] and n["ts"] and (n["uid"], n["ts"]) in other_idx:
+                        src = other_idx[(n["uid"], n["ts"])]
                     msgs.append(
                         {
                             "role": "forwarded",
                             "group": src,
-                            "id": n["id"],
-                            "seq": "",
-                            "time": "",
-                            "uid": n["uid"],
-                            "name": n["name"],
-                            "type": "forwarded",
-                            "text": n["text"],
-                            "reply": None,
-                            "files": [],
-                            "has_image": "[图片" in n["text"],
-                            "has_link": bool(URL_RE.search(n["text"])),
-                            "fwd_title": "",
-                            "fwd_n": 0,
-                            "json_url": "",
-                        }
-                    )
-            elif m["fwd_n"]:
-                for n in m["nested"]:
-                    msgs.append(
-                        {
-                            "role": "forwarded",
-                            "group": spec["key"],
                             "id": n["id"],
                             "seq": "",
                             "time": "",
@@ -537,6 +634,12 @@ def extract_group(spec: dict, rows: list[dict], other_idx: dict) -> list[dict]:
 
         if core and reasons:
             keep = spec["primary"] or klein_ok(rows, core, reasons)
+            gold = golden_hit_rows(rows, core, spec["key"])
+            if gold:
+                keep = True
+                if "golden_set" not in reasons:
+                    reasons.append("golden_set")
+                score = max(score, GOLDEN_SCORE)
             if keep:
                 core = list(dict.fromkeys(core))
                 core_ids = {rows[x]["id"] for x in core}
@@ -570,7 +673,8 @@ def extract_group(spec: dict, rows: list[dict], other_idx: dict) -> list[dict]:
             continue
         if m["id"] in used_core:
             continue
-        if not spec["primary"] and not TEA_SIGNAL.search(m["body"] + m["text"]):
+        gold = golden_hit_rows(rows, [i], spec["key"])
+        if not spec["primary"] and not TEA_SIGNAL.search(m["body"] + m["text"]) and not gold:
             continue
         lo, hi = max(0, i - NEARBY), min(n, i + NEARBY + 1)
         others = [
@@ -587,6 +691,8 @@ def extract_group(spec: dict, rows: list[dict], other_idx: dict) -> list[dict]:
         parents, cites_old = cited_parents(rows, by_id, core)
         extra = follow_replies(rows, by_id, {rows[x]["id"] for x in core + parents}, i)
         reasons = ["long_reply"]
+        if gold:
+            reasons.append("golden_set")
         if cites_old:
             reasons.append("cites_old")
         out.append(
@@ -597,29 +703,53 @@ def extract_group(spec: dict, rows: list[dict], other_idx: dict) -> list[dict]:
                 core,
                 parents + extra,
                 reasons,
-                m["n"],
+                GOLDEN_SCORE if gold else m["n"],
                 other_idx,
                 {rows[x]["id"] for x in parents},
             )
         )
+    seal_golden_misses(out, spec, rows, other_idx)
     return out
 
 
-def main() -> None:
-    print("loading tea...")
-    tea = load_group(GROUPS[0])
-    print("loading klein...")
-    klein = load_group(GROUPS[1])
-    tea_idx = uid_ts_index(tea)
-    klein_idx = uid_ts_index(klein)
+def other_uid_ts_index(
+    loaded: dict[str, list[dict]], skip_key: str
+) -> dict[tuple[str, int], str]:
+    idx: dict[tuple[str, int], str] = {}
+    for key, rows in loaded.items():
+        if key == skip_key:
+            continue
+        idx.update(uid_ts_index(rows))
+    return idx
+
+
+def main(argv: list[str] | None = None) -> None:
+    p = argparse.ArgumentParser(description="从 N 个 chunked JSONL / zip 提取候选片段")
+    add_group_args(p)
+    args = p.parse_args(argv)
+    groups = load_group_specs(args.config, extra_paths=args.group)
+
+    loaded: dict[str, list[dict]] = {}
+    for spec in groups:
+        print(f"loading {spec['key']} ({spec['name']}) from {spec['root']}...")
+        loaded[spec["key"]] = load_group(spec)
+        print(f"  {spec['key']}: {len(loaded[spec['key']])} msgs")
+
     print("extracting...")
-    cands = extract_group(GROUPS[0], tea, klein_idx)
-    cands += extract_group(GROUPS[1], klein, tea_idx)
+    cands: list[dict] = []
+    for spec in groups:
+        cands += extract_group(
+            spec, loaded[spec["key"]], other_uid_ts_index(loaded, spec["key"])
+        )
+    apply_golden_set(cands)
     cands.sort(key=lambda x: (-x["score"], x["time_start"]))
+    n_by_group = {spec["key"]: len(loaded[spec["key"]]) for spec in groups}
     payload = {
-        "source": [str(TEA), str(KLEIN)],
-        "n_tea": len(tea),
-        "n_klein": len(klein),
+        "source": [str(spec["root"]) for spec in groups],
+        "n_by_group": n_by_group,
+        "n_tea": n_by_group.get("tea"),
+        "n_klein": n_by_group.get("klein"),
+        "n_qitan": n_by_group.get("qitan"),
         "n_candidates": len(cands),
         "n_theory": sum(1 for x in cands if x["kind"] == "theory"),
         "n_discussion": sum(1 for x in cands if x["kind"] == "discussion"),
@@ -630,7 +760,8 @@ def main() -> None:
         f"wrote {OUT}  theory={payload['n_theory']}  "
         f"discussion={payload['n_discussion']}  files_on_hits="
         f"{sum(1 for x in cands if x['files'])}  cross="
-        f"{sum(1 for x in cands if x['cross_forwards'])}"
+        f"{sum(1 for x in cands if x['cross_forwards'])}  "
+        f"groups={n_by_group}"
     )
     gold_check(cands)
 
@@ -656,6 +787,11 @@ def gold_check(cands: list[dict]) -> None:
         print("gold discussion OK: 四层法 + 事实层/质感层")
     else:
         print("gold discussion FAIL: 四层法 extension missing")
+    for g in load_golden_set():
+        needles = golden_needles(g)
+        gid = g.get("id") or "?"
+        hit = any(text_hits_needles(candidate_blob(c), needles) for c in cands)
+        print(f"golden_set {'OK' if hit else 'FAIL'}: {gid}")
 
 
 if __name__ == "__main__":
