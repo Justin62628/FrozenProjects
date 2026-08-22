@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "09dc391e2b3185d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca051abf7d6e253e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d81b49de9d13dd1a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "饮茶室QA/冰学讨论/Elsa该不该永生.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Elsa该不该永生"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e054609ecbab9f2d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8edd000dac1f877f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b2ec6291f3f27dac",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "343b3b16c8ef17b9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "allan作为类创世神的定位确实可以选择让第五灵传承下去但这对其利益来说完全不如让Elsa永生稳定的多，这个位置的权限很大一旦下一任不靠谱会导致非常严重的后果。",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "d8e19a940ffeb598",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6cdcdad755770d09",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a1ea12d65128a3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "728c32246e70e009",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "饮茶室QA/冰学讨论/Elsa该不该永生.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "cd83fbf123cc2f7f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "饮茶室QA/冰学讨论/Elsa该不该永生.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "4cb45e0717d72950",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "7e745c7aa87347c2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "9580dc78ef01e6ec",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "饮茶室QA/冰学讨论/Elsa该不该永生.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "d81b49de9d13dd1a",
+  "lastOpenFiles": [
+    "饮茶室QA/其他/奇怪同人.md",
+    "饮茶室QA/其他/游鱼语录.md",
+    "饮茶室QA/冰学讨论/早期关于叙事质感的讨论.md",
+    "饮茶室QA/冰学讨论/F2结尾第五灵的必要性.md",
+    "饮茶室QA/_source/饮茶室QA-原文.md",
+    "饮茶室QA/核心/FrozenHeart语录.md",
+    "饮茶室QA/冰学讨论/JU：先看DS还是先看PN.md",
+    "饮茶室QA/冰学独立理论与分析/Dem：阿村军队相关.md",
+    "饮茶室QA/核心/JU：冰学演化史.md",
+    "饮茶室QA/核心/核心FAQ.md",
+    "饮茶室QA/冰学独立理论与分析/土豆：Elsa的锁.md",
+    "饮茶室QA/冰学独立理论与分析/土豆：莎雕分析.md",
+    "饮茶室QA/冰学独立理论与分析/游鱼：《Coronation Day》对冰学的启示.md",
+    "饮茶室QA/冰学讨论/未命名.md",
+    "饮茶室QA/冰学讨论/秘密会议之土豆批斗Klein：.md",
+    "饮茶室QA/冰学独立理论与分析/JU：莎雕分析.md",
+    "饮茶室QA/冰学独立理论与分析/纳西妲：莎雕神学分析.md",
+    "饮茶室QA/核心/饮茶室是干嘛的.md",
+    "饮茶室QA/核心/冰学发展简史.md",
+    "饮茶室QA/核心/常见缩写.md",
+    "饮茶室QA/冰学讨论/FH莎雕分析的局限性讨论.md",
+    "饮茶室QA/冰学讨论/Ahtohallan主体性.md",
+    "饮茶室QA/冰学独立理论与分析/FH：莎雕分析.md",
+    "饮茶室QA/冰学独立理论与分析/新约：娜雕解冻分析.md",
+    "饮茶室QA/冰学独立理论与分析/FH：娜雕解冻分析.md",
+    "饮茶室QA/测试集：FH的欠债/土豆的问题.md",
+    "饮茶室QA/测试集：FH的欠债",
+    "Pasted image 20260822082623.png",
+    "饮茶室QA/_extract/copy_range.py",
+    "饮茶室QA/_extract/data/decisions.json",
+    "饮茶室QA/_extract/data/candidates.tmp",
+    "饮茶室QA/_extract/__pycache__/review_server.cpython-311.pyc",
+    "饮茶室QA/_extract/__pycache__/extract_fragments.cpython-311.pyc",
+    "饮茶室QA/_extract/__pycache__",
+    "饮茶室QA/_extract/data/candidates.json",
+    "饮茶室QA/_extract/review_server.py",
+    "饮茶室QA/_extract/data"
+  ]
+}
