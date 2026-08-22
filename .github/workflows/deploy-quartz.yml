@@ -47,6 +47,15 @@ jobs:
           s = s.replace("pageTitle: Quartz 5", 'pageTitle: "Frozen / 饮茶室"', 1)
           s = s.replace("locale: en-US", "locale: zh-CN", 1)
           s = s.replace("baseUrl: quartz.jzhao.xyz", "baseUrl: Justin62628.github.io/FrozenProjects", 1)
+          for source in ('@quartz-community/og-image', 'github:quartz-community/og-image'):
+              needle = f'- source: "{source}"\n  enabled: true'
+              if needle in s:
+                  s = s.replace(needle, f'- source: "{source}"\n  enabled: false', 1)
+                  break
+              needle = f'- source: {source}\n  enabled: true'
+              if needle in s:
+                  s = s.replace(needle, f'- source: {source}\n  enabled: false', 1)
+                  break
           p.write_text(s, encoding="utf-8")
           PY
 
