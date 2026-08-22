@@ -1,0 +1,125 @@
+name: Deploy Obsidian Vault with Quartz 5
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout private vault
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Checkout Quartz 5
+        run: |
+          git clone --depth 1 --branch v5 https://github.com/jackyzha0/quartz.git quartz-site
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: quartz-site/package-lock.json
+
+      - name: Prepare Quartz configuration
+        shell: bash
+        run: |
+          cd quartz-site
+          cp quartz.config.default.yaml quartz.config.yaml
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          p = Path("quartz.config.yaml")
+          s = p.read_text(encoding="utf-8")
+
+          s = s.replace("pageTitle: Quartz 5", 'pageTitle: "Frozen / 饮茶室"', 1)
+          s = s.replace("locale: en-US", "locale: zh-CN", 1)
+          s = s.replace("baseUrl: quartz.jzhao.xyz", "baseUrl: Justin62628.github.io/FrozenProjects", 1)
+
+          pattern = r'(?m)^(\s*-\s*source:\s*["\']?(?:@quartz-community/og-image|github:quartz-community/og-image)["\']?\s*\n)(\s*enabled:\s*)true\s*$'
+          s, count = re.subn(pattern, r'\1\2false', s, count=1)
+          if count != 1:
+              raise SystemExit("Failed to locate and disable Quartz og-image plugin")
+
+          p.write_text(s, encoding="utf-8")
+          PY
+
+          echo "Quartz OG image config:"
+          grep -A1 -E 'source:.*(og-image)' quartz.config.yaml
+          if grep -A1 -E 'source:.*(og-image)' quartz.config.yaml | grep -q 'enabled: true'; then
+            echo "ERROR: og-image plugin is still enabled"
+            exit 1
+          fi
+
+      - name: Import vault root as Quartz content
+        shell: bash
+        run: |
+          rm -rf quartz-site/content/*
+
+          # Publish notes and common attachment types only. Tooling/scripts remain private.
+          rsync -a --prune-empty-dirs \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='.obsidian/' \
+            --exclude='**/_source/' \
+            --exclude='**/_extract/' \
+            --include='*/' \
+            --include='*.md' \
+            --include='*.png' \
+            --include='*.jpg' \
+            --include='*.jpeg' \
+            --include='*.webp' \
+            --include='*.gif' \
+            --include='*.svg' \
+            --include='*.pdf' \
+            --include='*.mp3' \
+            --include='*.mp4' \
+            --exclude='*' \
+            ./ quartz-site/content/
+
+          # Map the Vault README to the site root.
+          if [ -f quartz-site/content/README.md ]; then
+            cp quartz-site/content/README.md quartz-site/content/index.md
+            rm quartz-site/content/README.md
+          fi
+
+      - name: Install Quartz dependencies and plugins
+        working-directory: quartz-site
+        run: |
+          npm ci
+          npx quartz plugin install --from-config
+
+      - name: Build Quartz site
+        working-directory: quartz-site
+        run: npx quartz build
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz-site/public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
