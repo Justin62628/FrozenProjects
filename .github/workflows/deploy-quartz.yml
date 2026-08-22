@@ -42,22 +42,29 @@ jobs:
           cp quartz.config.default.yaml quartz.config.yaml
           python3 - <<'PY'
           from pathlib import Path
+          import re
+
           p = Path("quartz.config.yaml")
           s = p.read_text(encoding="utf-8")
+
           s = s.replace("pageTitle: Quartz 5", 'pageTitle: "Frozen / 饮茶室"', 1)
           s = s.replace("locale: en-US", "locale: zh-CN", 1)
           s = s.replace("baseUrl: quartz.jzhao.xyz", "baseUrl: Justin62628.github.io/FrozenProjects", 1)
-          for source in ('@quartz-community/og-image', 'github:quartz-community/og-image'):
-              needle = f'- source: "{source}"\n  enabled: true'
-              if needle in s:
-                  s = s.replace(needle, f'- source: "{source}"\n  enabled: false', 1)
-                  break
-              needle = f'- source: {source}\n  enabled: true'
-              if needle in s:
-                  s = s.replace(needle, f'- source: {source}\n  enabled: false', 1)
-                  break
+
+          pattern = r'(?m)^(\s*-\s*source:\s*["\']?(?:@quartz-community/og-image|github:quartz-community/og-image)["\']?\s*\n)(\s*enabled:\s*)true\s*$'
+          s, count = re.subn(pattern, r'\1\2false', s, count=1)
+          if count != 1:
+              raise SystemExit("Failed to locate and disable Quartz og-image plugin")
+
           p.write_text(s, encoding="utf-8")
           PY
+
+          echo "Quartz OG image config:"
+          grep -A1 -E 'source:.*(og-image)' quartz.config.yaml
+          if grep -A1 -E 'source:.*(og-image)' quartz.config.yaml | grep -q 'enabled: true'; then
+            echo "ERROR: og-image plugin is still enabled"
+            exit 1
+          fi
 
       - name: Import vault root as Quartz content
         shell: bash
