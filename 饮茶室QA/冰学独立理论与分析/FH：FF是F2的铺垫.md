@@ -9,7 +9,7 @@ tags:
   - area/frozen
 related:
   - "[[饮茶室QA/核心/FrozenHeart语录]]"
-  - "[[饮茶室QA/冰学独立理论与分析/FH：F2姐妹错位]]"
+  - "[[FH：F2姐妹的误解系关系性]]"
   - "[[饮茶室QA/冰学讨论/冰二的刻画缺失]]"
   - "[[饮茶室QA/冰学讨论/早期conceal与莎雕心理]]"
 updated: 2026-08-22
@@ -38,8 +38,6 @@ updated: 2026-08-22
 > *2020-05-01 01:11:11  FrozenHeart*
 > 所以FF比我们刚开始想的要重要很多
 
-> *2020-05-01 01:13:52  FrozenHeart*
-> @ChaosIce 我这个假说值得记录吗？
 
 > *2020-05-01 01:21:10  FrozenHeart*
 > *↪ ChaosIce：第一期坑就只能讲到dywtbs哪里*

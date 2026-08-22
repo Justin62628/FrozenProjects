@@ -8,8 +8,8 @@ tags:
   - type/ref
   - area/frozen
 related:
-  - "[[饮茶室QA/核心/核心FAQ]]"
-  - "[[FH：SY Metaphor]]"
+  - "[[必读：FAQ]]"
+  - "[[FH：Show Yourself Metaphor]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：Iduna不是第五灵]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：FOS的Nattmara与坏女王恐惧]]"

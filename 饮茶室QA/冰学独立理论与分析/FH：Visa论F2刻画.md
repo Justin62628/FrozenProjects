@@ -11,7 +11,7 @@ tags:
 related:
   - "[[饮茶室QA/核心/FrozenHeart语录]]"
   - "[[饮茶室QA/冰学讨论/冰二的刻画缺失]]"
-  - "[[FH：SY Metaphor]]"
+  - "[[FH：Show Yourself Metaphor]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：莎雕分析]]"
 updated: 2026-08-22
 ---

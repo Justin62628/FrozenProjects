@@ -7,7 +7,7 @@ tags:
   - type/ref
   - area/frozen
 related:
-  - "[[饮茶室QA/核心/核心FAQ]]"
+  - "[[必读：FAQ]]"
   - "[[FH：母女线分析]]"
 ---
 

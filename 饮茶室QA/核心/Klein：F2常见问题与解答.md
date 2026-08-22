@@ -7,7 +7,7 @@ tags:
   - type/ref
   - area/frozen
 related:
-  - "[[饮茶室QA/核心/核心FAQ]]"
+  - "[[必读：FAQ]]"
   - "[[FH：双桥理论]]"
   - "[[Klein：PN在冰学上的价值]]"
 ---

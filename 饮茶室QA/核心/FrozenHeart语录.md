@@ -9,7 +9,7 @@ tags:
   - area/frozen
 related:
   - "[[FH：双桥理论]]"
-  - "[[饮茶室QA/核心/核心FAQ]]"
+  - "[[必读：FAQ]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：莎雕分析]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：娜雕解冻分析]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：女王身份不是束缚]]"
@@ -46,7 +46,7 @@ FrozenHeart（uid 通常 `u_uqYRlo5ZEl3UlDaX-LAPtQ`）的短句、口号和索�
 - [[饮茶室QA/冰学独立理论与分析/FH：自闭期必须保持信息差]] — 圆焰类比；Astrid 笔友当面零回应。
 - [[饮茶室QA/冰学独立理论与分析/FH：Love is permanent]] — Olaf：物质会变，爱与精神遗产不变。
 - [[饮茶室QA/冰学独立理论与分析/FH：反对JE]] — Jack 引导自闭期会拆掉 E 线和姐妹羁绊。
-- [[饮茶室QA/冰学独立理论与分析/FH：F2姐妹错位]] — 形影不离仍有 13 年错位；together 才愈合。
+- [[FH：F2姐妹的误解系关系性]] — 形影不离仍有 13 年错位；together 才愈合。
 - [[饮茶室QA/冰学独立理论与分析/FH：Fear vs Love]] — 要补 E 的 love 和 A 的 fear 才能 vs。
 - [[饮茶室QA/冰学独立理论与分析/FH：双面动机与PN补全]] — 双面是动机合集；PN 补童年、却扁平化 Runeard。
 - [[饮茶室QA/冰学独立理论与分析/FH：FF是F2的铺垫]] — conceal 单扛、Anna 想照顾姐姐，灵感起于短片。
@@ -58,7 +58,7 @@ FrozenHeart（uid 通常 `u_uqYRlo5ZEl3UlDaX-LAPtQ`）的短句、口号和索�
 - [[饮茶室QA/冰学独立理论与分析/FH：没事干却离开会崩人设]] — 北地若没事却离开，人设崩；F2 是 3h 压进 90 分钟。
 - [[饮茶室QA/冰学独立理论与分析/FH：Elsa魔法两面性是给予者故意的]] — 魔法两面性是给予者对 Arendelle 的测试。
 - [[FH：双桥理论]] — 人与自然之桥 + Elsa 人性/魔法之桥。
-- [[FH：SY Metaphor]] — SY 场景的情感/象征逻辑。
+- [[FH：Show Yourself Metaphor]] — SY 场景的情感/象征逻辑。
 - [[FH：母女线分析]] — Iduna 线索贯穿 F2。
 - [[饮茶室QA/冰学独立理论与分析/FH：Iduna不是第五灵]] — crucial link，不是第五灵。
 - [[饮茶室QA/冰学独立理论与分析/FH：第五灵必须保留人性面]] — 成仙过 N 代也不会丢掉人性面，否则不成 bridge。
@@ -67,7 +67,7 @@ FrozenHeart（uid 通常 `u_uqYRlo5ZEl3UlDaX-LAPtQ`）的短句、口号和索�
 - [[饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice]] — STNC 当风；2020-04-03 + 2021-02-09 @Vivian 全文。
 - [[饮茶室QA/冰学独立理论与分析/FH：第五灵与Noaidi中介]] — 萨满中介透镜。
 - [[饮茶室QA/冰学独立理论与分析/FH：Athl冻住是为了让Anna独立]] — 冻住是为了让 Anna 独立成桥。
-- [[饮茶室QA/冰学独立理论与分析/FH：You have no right to claim Elsa]] — 2020-05-19 原文。
+- [[FH：You have no right to claim Elsa]] — 2020-05-19 原文。
 
 ## 假设（思想实验，不是官设）
 
@@ -115,6 +115,6 @@ Elsa意识到自己的魔法哪怕再怎么挣扎给Arendelle带来的只有不�
 ## 2020–2021 口号补
 
 - 魔法没有独立意识，那是人格的一半。见 [[饮茶室QA/冰学独立理论与分析/FH：双人格与魔法无独立意识]]
-- 封林是为了 Find the truth。见 [[饮茶室QA/冰学独立理论与分析/FH：truth theory与封林]]
+- 封林是为了 Find the truth。见 [[FH：大雾降下的truth theory]]
 - 片尾版 LIG 把转折抹平。见 [[饮茶室QA/冰学讨论/事件型IP与A线先定]]
 - a place of our own 废案 OOC。见 [[饮茶室QA/冰学独立理论与分析/FH：废案a place of our own与议会]]

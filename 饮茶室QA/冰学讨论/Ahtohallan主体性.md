@@ -2,7 +2,7 @@
 title: Ahtohallan主体性
 area: 冰学讨论
 source: "[[饮茶室QA/_source/饮茶室QA-原文]]"
-source_lines: "924-987"
+source_lines: 924-987
 updated: 2026-08-22
 time_start: 2025-06-30 22:34:03
 time_end: 2026-02-11 11:16:53
@@ -10,13 +10,13 @@ tags:
   - type/ref
   - area/frozen
 related:
-  - "[[饮茶室QA/核心/核心FAQ]]"
+  - "[[必读：FAQ]]"
   - "[[饮茶室QA/冰学讨论/第五灵考核]]"
   - "[[饮茶室QA/其他/几内亚-历览前贤国与家]]"
   - "[[饮茶室QA/冰学独立理论与分析/JU：用SEKAI补阿塔霍兰]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：Ahtohallan是四灵之母]]"
   - "[[Klein：PN在冰学上的价值]]"
-  - "[[饮茶室QA/冰学讨论/PN的北地]]"
+  - "[[PN的北地世界观分析]]"
 ---
 
 # Ahtohallan主体性

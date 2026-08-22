@@ -7,7 +7,7 @@ tags:
   - type/ref
   - area/frozen
 related:
-  - "[[饮茶室QA/核心/核心FAQ]]"
+  - "[[必读：FAQ]]"
   - "[[Klein：PN在冰学上的价值]]"
   - "[[Klein：世界观问题]]"
   - "[[饮茶室QA/冰学讨论/Elsa该不该永生]]"

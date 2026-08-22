@@ -9,7 +9,7 @@ tags:
   - area/frozen
 related:
   - "[[饮茶室QA/核心/FrozenHeart语录]]"
-  - "[[饮茶室QA/核心/核心FAQ]]"
+  - "[[必读：FAQ]]"
 updated: 2026-08-22
 ---
 

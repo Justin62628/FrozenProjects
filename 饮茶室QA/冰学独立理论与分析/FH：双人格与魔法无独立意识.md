@@ -55,18 +55,6 @@ updated: 2026-08-22
 > 而这个理论放到F2里也更好的解释了Elsa为何适合作为第五灵。Snowqueen是魔法的一边，站在自然之灵一侧，而E of Arendelle是站在人类一侧的领导者。在SY里两者终于完全接纳了对方，融为一体。所以Elsa在心理上也是是一半灵，一半人，完全适合当做Bridge。而为什么需要Anna来承担the other side是因为Elsa曾经常年自闭，不是和普通人类那么亲近，而Anna就是完全的people person，补充了Elsa在人类那侧的缺口。Elsa待在Northuldra就是因为她还起着bridge的作用，如果她完全是灵了的话就会选择待在Ahtohallan了。
 > F2部分待续
 
-> *2020-03-24 08:16:56  FrozenHeart*
-> @全体成员
-
-> *2020-03-24 08:17:35  FrozenHeart*
-> 码字码了快2h了/泪奔
-
-> *2020-03-24 08:25:07  FrozenHeart*
-> @ZQ 说说你作为单人格是如何理解的
-
-> *2020-03-24 08:26:42  FrozenHeart*
-> 我把旧理论也粘过来，一起看容易理解
-
 ## 2021-02 魔法无独立意识
 
 > *2021-02-28 04:07:26  FrozenHeart*

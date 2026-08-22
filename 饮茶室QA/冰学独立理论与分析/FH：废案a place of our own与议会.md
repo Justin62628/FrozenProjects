@@ -9,7 +9,7 @@ tags:
   - area/frozen
 related:
   - "[[饮茶室QA/冰学独立理论与分析/FH：没事干却离开会崩人设]]"
-  - "[[饮茶室QA/核心/冰雪时间线发生顺序（冰雪编年史）]]"
+  - "[[必读：冰雪时间线发生顺序、冰雪编年史]]"
   - "[[饮茶室QA/冰学讨论/第五灵日常职责真空]]"
 updated: 2026-08-22
 ---
@@ -37,7 +37,7 @@ updated: 2026-08-22
 > @Elsa 这东西没看过的都是假粉/斜眼笑/爆筋。不止是时长限制的问题，这段后面Elsa的表现彻底ooc了。tmd Arendelle都被冲毁了以Elsa这性子还能跟没事人一样跟Anna说“四灵需要我”？我每次重看这段都浑身冒冷汗。要知道Elsa为什么冰冻又何以解冻的：被对自己国家的责任和对整个世界观的责任的冲突逼入死角无路可走，解冻也是因为Arendelle不必冲毁，心结解开。正片中Elsa强调过 I took an oath to always do what is best for Arendelle，但这个删减片段里Elsa似乎已经不再在意Arendelle的发展。那句 Ahtohallan changed me更是令我毛骨悚然，结合她对冲毁的国家面不改色而把国家重任轻松的全交给Anna来看，这是把成仙论实锤的节奏/流汗/流汗/流汗…… 在SY后彻底抛弃人性而全部转换为灵性。你面前的Elsa不再有那个对妹妹一直无私暗中支持的姐姐和为国家鞠躬尽瘁的女王，只剩下所谓的第五灵。这才是彻底的人设崩坏。然后那个 I don't know how and when the forest would need me but I wanna be there when they do是整个片段最大的败笔。首先这tm是官方明面实锤Elsa根本不知道当上第五灵是来干嘛的，人物动机不明，然后tmdArendelle现在就需要你！国家都被冲垮了然后你就把这烂摊子扔给妹妹不管了？？？FOS里那个为了自己去周游列国后妹妹可以少操些心而让自己加班加点多干活的默默奉献的姐姐哪里去了？这段删减前半段看似温馨感人但后半段用细思极恐形容都是understatement。加上前面ITU铺垫不足那甚至可以让人有理有据的推理出Elsa是完全被Ahtohallan洗脑，主观意识丧尽的空壳了
 
 > *2021-06-20 13:03:51  FrozenHeart*
-> @Elsa a place of our own这片段没看过的都是假粉/斜眼笑/爆筋。不止是时长限制的问题，这段后面Elsa的表现彻底ooc了。tmd Arendelle都被冲毁了以Elsa这性子还能跟没事人一样跟Anna说“四灵需要我”？我每次重看这段都浑身冒冷汗。要知道Elsa为什么冰冻又何以解冻的：被对自己国家的责任和对整个世界观的责任的冲突逼入死角无路可走，解冻也是因为Arendelle不必冲毁，心结解开。正片中Elsa强调过 I took an oath to always do what is best for Arendelle，但这个删减片段里Elsa似乎已经不再在意Arendelle的发展。那句 Ahtohallan changed me更是令我毛骨悚然，结合她对冲毁的国家面不改色而把国家重任轻松的全交给Anna来看，这是把成仙论实锤的节奏/流汗/流汗/流汗…… 在SY后彻底抛弃人性而全部转换为灵性。你面前的Elsa不再有那个对妹妹一直无私暗中支持的姐姐和为国家鞠躬尽瘁的女王，只剩下所谓的第五灵。这才是彻底的人设崩坏。然后那个 I don't know how and when the forest would need me but I wanna be there when they do是整个片段最大的败笔。首先这tm是官方明面实锤Elsa根本不知道当上第五灵是来干嘛的，人物动机不明，然后tmdArendelle现在就需要你！国家都被冲垮了然后你就把这烂摊子扔给妹妹不管了？？？FOS里那个为了自己去周游列国后妹妹可以少操些心而让自己加班加点多干活的默默奉献的姐姐哪里去了？这段删减前半段看似温馨感人但后半段用细思极恐形容都是understatement。加上前面ITU铺垫不足那甚至可以让人有理有据的推理出Elsa是完全被Ahtohallan洗脑，主观意识丧尽的空壳了
+> @Elsa a place of our own这片段没看过的都是假粉/斜眼笑/爆筋。不止是时长限制的问题，这段后面Elsa的表现彻底ooc了。tmd Arendelle都被冲毁了以Elsa这性子还能跟没事人一样跟Anna说“四灵需要我”？我每次重看这段都浑身冒冷汗。**要知道Elsa为什么冰冻又何以解冻的：被对自己国家的责任和对整个世界观的责任的冲突逼入死角无路可走，解冻也是因为Arendelle不必冲毁，心结解开。** 正片中Elsa强调过 I took an oath to always do what is best for Arendelle，但这个删减片段里Elsa似乎已经不再在意Arendelle的发展。那句 Ahtohallan changed me更是令我毛骨悚然，结合她对冲毁的国家面不改色而把国家重任轻松的全交给Anna来看，这是把成仙论实锤的节奏/流汗/流汗/流汗…… 在SY后彻底抛弃人性而全部转换为灵性。你面前的Elsa不再有那个对妹妹一直无私暗中支持的姐姐和为国家鞠躬尽瘁的女王，只剩下所谓的第五灵。这才是彻底的人设崩坏。然后那个 I don't know how and when the forest would need me but I wanna be there when they do是整个片段最大的败笔。首先这tm是官方明面实锤Elsa根本不知道当上第五灵是来干嘛的，人物动机不明，然后tmdArendelle现在就需要你！国家都被冲垮了然后你就把这烂摊子扔给妹妹不管了？？？FOS里那个为了自己去周游列国后妹妹可以少操些心而让自己加班加点多干活的默默奉献的姐姐哪里去了？这段删减前半段看似温馨感人但后半段用细思极恐形容都是understatement。加上前面ITU铺垫不足那甚至可以让人有理有据的推理出Elsa是完全被Ahtohallan洗脑，主观意识丧尽的空壳了
 
 > *2021-06-20 13:13:05  FrozenHeart*
 > *↪ Magic Fear（深潜）：我的意思是就是吧，稍微改一改，这一段是可以用的，如果有说构造Elsa内心的整个世界观，这样就交代清楚了，为什么最后的王位要传给a*

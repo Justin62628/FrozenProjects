@@ -9,7 +9,7 @@ tags:
   - area/frozen
 related:
   - "[[Klein：PN在冰学上的价值]]"
-  - "[[饮茶室QA/冰学讨论/PN的北地]]"
+  - "[[PN的北地世界观分析]]"
   - "[[饮茶室QA/冰学讨论/JU：先看DS还是先看PN]]"
 updated: 2026-08-22
 ---

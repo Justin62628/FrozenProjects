@@ -11,7 +11,7 @@ tags:
 related:
   - "[[饮茶室QA/核心/FrozenHeart语录]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：母女线分析]]"
-  - "[[FH：SY Metaphor]]"
+  - "[[FH：Show Yourself Metaphor]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：Visa论F2刻画]]"
 updated: 2026-08-22
 ---

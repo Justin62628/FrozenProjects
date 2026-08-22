@@ -9,7 +9,7 @@ tags:
   - type/ref
   - area/frozen
 related:
-  - "[[饮茶室QA/核心/核心FAQ]]"
+  - "[[必读：FAQ]]"
   - "[[饮茶室QA/冰学讨论/再论莎雕]]"
   - "[[饮茶室QA/冰学讨论/FH莎雕分析的局限性讨论]]"
   - "[[饮茶室QA/核心/FrozenHeart语录]]"

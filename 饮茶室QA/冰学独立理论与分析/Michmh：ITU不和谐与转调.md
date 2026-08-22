@@ -10,7 +10,7 @@ tags:
 related:
   - "[[饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice]]"
   - "[[FH：母女线分析]]"
-  - "[[FH：SY Metaphor]]"
+  - "[[FH：Show Yourself Metaphor]]"
 updated: 2026-08-22
 ---
 
