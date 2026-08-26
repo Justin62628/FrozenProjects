@@ -50,6 +50,7 @@ jobs:
           s = s.replace("pageTitle: Quartz 5", 'pageTitle: "Frozen / 饮茶室"', 1)
           s = s.replace("locale: en-US", "locale: zh-CN", 1)
           s = s.replace("baseUrl: quartz.jzhao.xyz", "baseUrl: Justin62628.github.io/FrozenProjects", 1)
+          s = s.replace("defaultDateType: modified", "defaultDateType: created", 1)
 
           pattern = r'(?m)^(\s*-\s*source:\s*["\']?(?:@quartz-community/og-image|github:quartz-community/og-image)["\']?\s*\n)(\s*enabled:\s*)true\s*$'
           s, count = re.subn(pattern, r'\1\2false', s, count=1)
@@ -97,6 +98,46 @@ jobs:
             cp quartz-site/content/README.md quartz-site/content/index.md
             rm quartz-site/content/README.md
           fi
+
+      - name: Inject 出处时间 as created date
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+
+          content = Path("quartz-site/content")
+          injected = 0
+          skipped = []
+          for p in sorted(content.rglob("*.md")):
+              txt = p.read_text(encoding="utf-8")
+              if not txt.startswith("---"):
+                  continue
+              m = re.match(r"^---\n(.*?)\n---\n", txt, re.S)
+              if not m:
+                  continue
+              fm = m.group(1)
+              if re.search(r"(?m)^created:", fm):
+                  continue
+              ts = re.search(r"(?m)^time_start:\s*(.+)$", fm)
+              if not ts:
+                  skipped.append(str(p.relative_to(content)))
+                  continue
+              val = ts.group(1).strip().strip('"').strip("'")
+              date_part = val[:10]
+              if not re.match(r"^\d{4}-\d{2}-\d{2}$", date_part):
+                  skipped.append(str(p.relative_to(content)))
+                  continue
+              new_fm = fm + f"\ncreated: {date_part}"
+              txt = txt[:m.start(1)] + new_fm + txt[m.end(1):]
+              p.write_text(txt, encoding="utf-8")
+              injected += 1
+          print(f"injected created date into {injected} notes")
+          if skipped:
+              print(f"skipped {len(skipped)} notes without time_start:")
+              for s in skipped:
+                  print("  -", s)
+          PY
 
       - name: Install Quartz dependencies and plugins
         working-directory: quartz-site
