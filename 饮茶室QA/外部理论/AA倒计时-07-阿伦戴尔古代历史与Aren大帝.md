@@ -13,40 +13,17 @@ updated: 2026-08-26
 
 # AA倒计时-07：阿伦戴尔古代历史与Aren大帝
 
-> 来源：tumblr 博客 @arendelle-archives（Arendelle Archives 4周年倒计时系列 7/10），2026-08-26 收录整理。原文：[链接](https://www.tumblr.com/arendelle-archives/788477774768766976)。图片按原文位置存放于 assets。
+> 来源：tumblr 博客 @arendelle-archives（Arendelle Archives 4周年倒计时系列 7/10），2026-08-26 收录整理。原文：[链接](https://www.tumblr.com/arendelle-archives/788477774768766976)。本篇只收录链接与概要（正文完整内容为作者的 PDF 项目文件）。
 
-![img](/饮茶室QA/assets/AA-07-01.jpg)
-For part 7 of our 10-part anniversary series, we take a look at the ancient history of Arendelle, the connections to Vikings and the legend of Aren, the Great.
-This specific project was too big for a standard Tumblr post and most of the content would be hidden below the cut. So I decided to use my project book format as PDF-file with 16 pages in total, plus external link to a high resolution picture that Tumblr wouldn't show in it's full size, besides all the formatting :-)
-This is a follow-up to the project "How old is Arendelle?"
-You can all guess that this is not a real history lesson with real characters and events, etc. This is about Disney's fictional kingdom of Arendelle, whose position on the world map is based on real-life Norway in the mid-19th century, with models in architecture, flora and fauna, unique fjords, typical weather conditions for this area, traditions and behaviours, traditional dishes, design and much more, down to the smallest details.
-Most of you are satisfied with the Frozen films, some of you also read the additional novels and sometimes the countless comics, but very few of you question Arendelle's worldview and what lies behind it, or want to spend your free time doing time-consuming research. This is where we at “Arendelle Archives” come in, taking you deeper down the rabbit hole and presenting you with amazing facts, findings, analyses and speculations that many of you have never even dreamed of.
-You are all familiar with the name “Arendelle” and some of you also know the name “Arenfjord”, where the royal castle and the picturesque town behind it are located. But do you notice anything here? It is the name “Aren“, and there is a fictional story behind it, a story about the namesake whose traces actually seem to lead back to our own past. Well, not really, but Disney has used many references from past centuries and shown them everywhere as little clues in the films. It's about the Vikings. And it's about Aren the Great.
-Incidentally, “Aren” is said to be derived from “Ørn”, which means “eagle” in Norwegian.
-The Old Norse name for Arendelle is Àrnadalr, which very conveniently aligns with "Arn" being an Old Norse word for "eagle". So, it's possible Aren was originally named Arn.
-We've all seen it, or at least noticed it subliminally, in all the Frozen films and short films, Frozen 1, Frozen Fever, OFA, with the exception of Frozen 2. Even in the sequels Frozen 3+4, currently in production, there is a hidden reference to Vikings in Brittney Lee's concept art, albeit with a misrepresented helmet. Vikings never wore such horns on their helmets, if at all.
+## 概要
 
-![img](/饮茶室QA/assets/AA-07-02.jpg)
-But that is not the subject here. Rather, it is the history of Arendelle, dating back to the kingdom's beginnings with its founder, Aren the Great, who landed with the first settlers on the coast of the land that would later be named after him.
+系列第 7 篇（作者 bigfrozenfan）考察**阿伦戴尔的古代历史、与维京人的渊源，以及传说中开国君主「Aren 大帝」**。该主题项目体量超出 tumblr 帖文限制，正文以 16 页 PDF 呈现，本帖为介绍性内容（也是《How old is Arendelle?》项目的续篇）。
 
-![img](/饮茶室QA/assets/AA-07-03.jpg)
+要点：
 
-![img](/饮茶室QA/assets/AA-07-04.jpg)
+- **名字考据**：据说 "Aren" 源自挪威语 "Ørn"（鹰）；阿伦戴尔的古诺斯语名 "Àrnadalr" 与古诺斯语 "Arn"（鹰）高度吻合，因此 Aren 的原名很可能是 Arn。
+- **维京元素**：Frozen 1、Frozen Fever、OFA 中都能看到维京元素（长船、盔甲、盾牌），Frozen 2 例外；甚至制作中的 Frozen 3+4 概念艺术（Brittney Lee）里也藏着维京彩蛋——不过头盔画法不符合史实（维京人并不戴角盔）。
+- **建国传说**：Aren 大帝率首批定居者登陆后来以他命名的海岸，是王国的奠基者。
+- **周边八卦**：作者自 2020 年起就在 Discord 猜测「Ahtohallan 注意到了阿伦戴尔的建国者，并为他准备了特别的安排」，甚至写进了自己的同人小说；2022 年 7 月 Virtual Winter 为聊天绘制的 Aren 相关画作也获授权收录在本帖。
 
-## Read on in my pdf: LINK
-About Arendelle Archives Chats on Discord
-It's often about pretty nerdy stuff, and sometimes I can really let loose about things I can't talk about anywhere else, or because nowhere else anyone would listen to me. Most of the time it's really fun, and before I started this project, Aren was always one of my favourite topics, for me on Discord already since 2020. Last year in May and August, as well as this year, I even speculated in our chat that Ahtohallan had taken notice of Arendelle's founding father and had something very special in mind for him, something I even used in my fanfic novel.
-
-![img](/饮茶室QA/assets/AA-07-05.jpg)
-
-![img](/饮茶室QA/assets/AA-07-06.jpg)
-
-![img](/饮茶室QA/assets/AA-07-07.jpg)
-Virtual Winter made some very interesting drawings for the chat back in July 2022, referring to Aren, the Great. I got the permission to post it here now.
-
-![img](/饮茶室QA/assets/AA-07-08.jpg)
-
-![img](/饮茶室QA/assets/AA-07-09.jpg)
-Update and last addition, found by @virtual-winter
-
-![img](/饮茶室QA/assets/AA-07-10.jpg)
+> 完整内容（16 页 PDF + 高清图）见原帖链接。
