@@ -257,3 +257,5 @@ FrozenHeart（显示名 FrozenHeart / 偶发 `【125】FrozenHeart`；QQ uin `27
 ## TODO
 
 有几个理论一直说要写但一直没落笔的：ITU逐句分析，the Voice出现场合和Elsa心态变化的联系，FOS DS联动分析，Coronation Day分析，以及母女线写了一半搁置了
+
+---
