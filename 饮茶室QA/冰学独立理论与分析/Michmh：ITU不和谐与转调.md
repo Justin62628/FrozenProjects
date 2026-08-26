@@ -8,7 +8,7 @@ tags:
   - type/ref
   - area/frozen
 related:
-  - "[[饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice]]"
+  - "[[饮茶室QA/冰学独立理论与分析/FH：The Voice相关理论]]"
   - "[[FH：母女线分析]]"
   - "[[FH：Show Yourself Metaphor]]"
 updated: 2026-08-22
@@ -18,7 +18,7 @@ updated: 2026-08-22
 
 出处时间：2020-03-19 22:24:59 → 2020-04-08 22:23:20
 
-主张：ITU 的「不和谐」是结构，不是唱功问题。Michmh 从调性/场景/情感三层反差入手；木瓜给转调顺序（多利安小调 → 远关系 C 大调）当 Elsa 开始回应召唤的音乐证据；FH 补 Iduna 围巾：something wrong 时找妈妈，才能接上 SY 的 you are the one。正片第一次听见 Voice 见 [[饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice]]。
+主张：ITU 的「不和谐」是结构，不是唱功问题。Michmh 从调性/场景/情感三层反差入手；木瓜给转调顺序（多利安小调 → 远关系 C 大调）当 Elsa 开始回应召唤的音乐证据；FH 补 Iduna 围巾：something wrong 时找妈妈，才能接上 SY 的 you are the one。正片第一次听见 Voice 见 [[饮茶室QA/冰学独立理论与分析/FH：The Voice相关理论]]。
 
 ### 2020-03 奇谈 ITU 不和谐感
 

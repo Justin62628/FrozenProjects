@@ -24,7 +24,7 @@ related:
   - "[[饮茶室QA/冰学独立理论与分析/FH：第五灵必须保留人性面]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：FOS的Nattmara与坏女王恐惧]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：Visa论F2刻画]]"
-  - "[[饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice]]"
+  - "[[饮茶室QA/冰学独立理论与分析/FH：The Voice相关理论]]"
   - "[[饮茶室QA/冰学独立理论与分析/FH：Runeard对魔法的不信任]]"
   - "[[饮茶室QA/同人/MOC-同人]]"
 updated: 2026-08-22
@@ -64,7 +64,7 @@ FrozenHeart（uid 通常 `u_uqYRlo5ZEl3UlDaX-LAPtQ`）的短句、口号和索�
 - [[饮茶室QA/冰学独立理论与分析/FH：第五灵必须保留人性面]] — 成仙过 N 代也不会丢掉人性面，否则不成 bridge。
 - [[饮茶室QA/冰学独立理论与分析/FH：FOS的Nattmara与坏女王恐惧]] — FOS 怕 being a bad Queen；埋恐惧才显形。
 - [[饮茶室QA/冰学独立理论与分析/FH：Visa论F2刻画]] — 同意刻画贫瘠，不同意工具人。
-- [[饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice]] — STNC 当风；2020-04-03 + 2021-02-09 @Vivian 全文。
+- [[饮茶室QA/冰学独立理论与分析/FH：The Voice相关理论]] — STNC 当风；2020-04-03 + 2021-02-09 @Vivian 全文。
 - [[饮茶室QA/冰学独立理论与分析/FH：第五灵与Noaidi中介]] — 萨满中介透镜。
 - [[饮茶室QA/冰学独立理论与分析/FH：Athl冻住是为了让Anna独立]] — 冻住是为了让 Anna 独立成桥。
 - [[FH：You have no right to claim Elsa]] — 2020-05-19 原文。
