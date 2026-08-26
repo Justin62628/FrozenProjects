@@ -139,6 +139,39 @@ jobs:
                   print("  -", s)
           PY
 
+      - name: Inject early-2020 wording disclaimer
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+
+          content = Path("quartz-site/content")
+          injected = 0
+          for p in sorted(content.rglob("*.md")):
+              txt = p.read_text(encoding="utf-8")
+              m = re.match(r"^---\n(.*?)\n---\n", txt, re.S)
+              if not m:
+                  continue
+              ts = re.search(r"(?m)^time_start:\s*(.+)$", m.group(1))
+              if not ts:
+                  continue
+              date_part = ts.group(1).strip().strip('"').strip("'")[:10]
+              if not (date_part < "2021-01-01"):
+                  continue
+              callout = (
+                  "> [!warning] 早期文本\n"
+                  "> 本篇出处时间为 {d}，属 2020 年冰学讨论早期的记录，"
+                  "部分用词与术语尚不精确，与后来约定俗成的表述可能不一致，阅读时请注意甄别。\n\n"
+              ).format(d=date_part)
+              body = txt[m.end():]
+              if body.startswith("> [!warning] 早期文本"):
+                  continue
+              p.write_text(txt[:m.end()] + callout + body, encoding="utf-8")
+              injected += 1
+          print(f"injected early-2020 disclaimer into {injected} notes")
+          PY
+
       - name: Install Quartz dependencies and plugins
         working-directory: quartz-site
         run: |
