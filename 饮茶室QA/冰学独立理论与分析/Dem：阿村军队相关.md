@@ -21,14 +21,14 @@ updated: 2026-08-26
 
 FROZRN武库
 
-![img](../assets/Dem-Arendelle矛-01.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-01.jpg)
 ### Arendelle多用途矛——王军的最可靠的战友
 
 作者:Dem
 
 PS:文中引用了一些罗马矛图片，因为缺乏欧洲矛的图片资料
 
-![img](../assets/Dem-Arendelle矛-02.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-02.jpeg)
 ## 小问题：
 
 如图，自上而下，选出Arendelle的制式武器A.武器1
@@ -39,11 +39,11 @@ C.武器3
 
 D.武器4
 
-![img](../assets/Dem-Arendelle矛-03.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-03.jpeg)
 
 看出来了吧？
 
-![img](../assets/Dem-Arendelle矛-04.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-04.jpeg)
 答案应该是D，而且武器2,3是同一件武器。
 
 > 📝 作者更正（2026-08-26）：上图右侧的"武器4"标注有误，那个并不是武器4。
@@ -58,17 +58,17 @@ D.武器4
 
 矛是人类最古老的武器之一，可追溯到石器时代。中世纪的欧洲广泛使用长矛，并且有诸多变体。
 
-![img](../assets/Dem-Arendelle矛-05.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-05.jpeg)
 你还能找到最经典的那款吗？
 
-![img](../assets/Dem-Arendelle矛-06.jpeg)
-![img](../assets/Dem-Arendelle矛-07.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-06.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-07.jpeg)
 长矛既可投掷武器，也可用作近战武器。主要用于近战的长矛，相较专门用于投掷的长矛更加结实沉重。投掷用长矛也被称为称为标枪，重量较轻，头部呈流线型。
 
-![img](../assets/Dem-Arendelle矛-08.jpeg)
-![img](../assets/Dem-Arendelle矛-09.jpeg)
-![img](../assets/Dem-Arendelle矛-10.jpeg)
-![img](../assets/Dem-Arendelle矛-11.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-08.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-09.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-10.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-11.jpeg)
 中世纪的长只使用钢材制作矛尖，与木杆进行组合，相比剑制作成本低，速度快，因此作为步兵和骑兵武器大量装备。
 
 ## Arendelle的矛以及使用分析
@@ -77,96 +77,96 @@ D.武器4
 
 提起Arendelle的矛，就不得不先说说这两副频繁出现的板甲。这是FROZEN系列中首次出现军器。
 
-![img](../assets/Dem-Arendelle矛-12.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-12.jpg)
 第一次出现在场景，小Anna在城堡唱着Do You Want To Build a Snowman，踩自行车下楼梯摔了一跤，落入了一副板甲的怀中。
 
 场景中左边一副板甲是空手的，右边板甲没有完全进入镜头，此时并不知道它是否手持武器。
 
 根据《A FROZEN WORLD》一书中提供的城堡内部结构图，城堡大厅中一般摆放有两副板甲，而且都是持矛的，但在电影场景中时有时无。另外，城堡放杂物的阁楼中也藏着两副，共有四副已知的板甲存在。
 
-![img](../assets/Dem-Arendelle矛-13.jpeg)
-![img](../assets/Dem-Arendelle矛-14.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-13.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-14.jpeg)
 
 可以看到矛模糊的影子。
 
-![img](../assets/Dem-Arendelle矛-15.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-15.jpg)
 虽然不是正史，但在《Olaf's Frozen Adventure》中，有一段在阁楼的情节，姐妹俩找寻回忆时，板甲的影子若隐若现，此时也是持矛的。
 
-![img](../assets/Dem-Arendelle矛-16.jpeg)
-![img](../assets/Dem-Arendelle矛-01.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-16.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-01.jpg)
 矛第一次清晰的出现，则是在Anna在城堡开放时，在城堡中跳舞的场景。
 
 在这里可以清楚的看到有三副持矛板甲出镜。
 
-![img](../assets/Dem-Arendelle矛-17.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-17.jpg)
 但在《Frozen Fever》中，板甲数量又变成了一副，且为空手。Elsa在其中藏了给Anna的第二件生日礼物。
 
-![img](../assets/Dem-Arendelle矛-18.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-18.jpg)
 板甲数量摆在那里，只要不穿帮，想怎么放随他们喜欢，但这不是重点，我们主要说矛。
 
 仔细观察不难发现，这副板甲所持的矛是全金属的。但这不仅意味着较高的制造成本，沉重的重量也会对使用造成不便，这是不合理的。从电影中为数不多的作战场景来看，Arendelle军已经不在实战中装备这种板甲了，因此这支钢矛应该与板甲一样，属于老物件，也可能是工艺收藏品，作为军力的象征。但在历史时期，也许Arendelle军真的使用过这种全金属长矛，这就要看官方后续会不会给出更多信息了。
 
 ### 二．实战中的Arendelle长矛
 
-![img](../assets/Dem-Arendelle矛-19.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-19.jpg)
 第一次长矛用于实战的电影表现，是在Hans带队前往北山，寻找Elsa和Anna姐妹俩的时候。
 
 此时给出了Arendelle王军持矛的镜头，他们所使用的就是木杆铁尖的制式Arendelle矛（虽然有反光但仔细看也能发现），这才是标准装备。
 
-![img](../assets/Dem-Arendelle矛-20.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-20.jpeg)
 从长度来看，Arendelle的矛长度较短，适合步兵单兵作战。而关于矛的长度，由于不易保存，极少有木质矛杆存世。矛的长度，一般就是1.8米到2.5米，对单兵使用来说，3米以下是常态。骑兵的矛一般相较步兵的矛更长也更重，但很多时候骑兵步兵的矛不分。Arendelle的矛就是比较短的那种。但放在方阵里，就开始离谱了…….
 
-![img](../assets/Dem-Arendelle矛-21.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-21.jpeg)
 西班牙长矛，长约5米
 
 马其顿长矛，长度为2—7米……
 
 但是这两种巨长的长矛只是方阵中使用的，不能用于单兵作战。
 
-![img](../assets/Dem-Arendelle矛-22.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-22.jpeg)
 Arendelle的矛，则非常类似于哥萨克短矛。
 
-![img](../assets/Dem-Arendelle矛-23.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-23.jpg)
 
-![img](../assets/Dem-Arendelle矛-24.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-24.jpg)
 电影《火与剑》中的哥萨克人
 
 就像这样。（图中的哥萨克人为十六到十七世纪时期的，我们单说矛，毕竟Arendelle的科技树点的也不正常）
 
 在文艺复兴时期的欧陆战争，长矛作战仍是主流，哥萨克短矛的逆势而上，一来是因为用于守卫被称为赛契的要塞内作战的近距离作战，二来是因为哥萨克人依靠战车火枪掩护步兵前进，依靠近身肉搏来对付乌克兰平原上难缠的鞑靼骑兵和波兰—立陶宛骑兵，而在这种情况下，短矛就比长矛灵活多了。
 
-![img](../assets/Dem-Arendelle矛-25.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-25.jpg)
 而Arendelle矛的设计原因另有不同，这与Arendelle特殊的地理环境和国情以及Arendelle王军的特点是分不开的。Arendelle矛因此而具备的多功能，也是我将其称之为多用途矛的原因。
 
 主要有三点：
 
-![img](../assets/Dem-Arendelle矛-26.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-26.jpeg)
 周边广阔的山地环境和防御野兽
 
 官方小说《Forest of Shadows》中附Arendelle地图，其北部有广大的山地。
 
-![img](../assets/Dem-Arendelle矛-27.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-27.jpg)
 
 电影表现，城堡后方就是石山。
 
 Arendelle王军当然免不了爬山。而较短长度的矛，在山地进行活动就比较轻松。Arendelle并没有许多开阔的平原，不适合发展大量骑兵，适应开阔地带作战的较长的长矛起不到很大的作用。而在崎岖的山地使用，更是不便。
 
-![img](../assets/Dem-Arendelle矛-28.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-28.jpg)
 并且，Arendelle的山林中，栖息着大量的狼。
 
-![img](../assets/Dem-Arendelle矛-29.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-29.jpg)
 Anna，Kristoff和Olaf都曾被它们追的到处跑。（算上OFA,Olaf经历了两次）
 
-![img](../assets/Dem-Arendelle矛-30.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-30.jpg)
 
-![img](../assets/Dem-Arendelle矛-31.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-31.jpg)
 
-![img](../assets/Dem-Arendelle矛-32.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-32.jpeg)
 而对付成群的野兽，就需要较高的灵活性和机动性。
 
 若使用这种长度的矛，连转身、移动都困难，只能乖乖的当狼群的口中美餐。
 
-![img](../assets/Dem-Arendelle矛-33.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-33.jpeg)
 而短矛既可以马上使用，又可以步行使用，短小轻便，是防御或猎杀野兽的理想武器。
 
 Coldsteel公司在美国卖的很好的野猪矛，改进自印第安人的狩猎矛，也是这个道理。
@@ -175,17 +175,17 @@ Coldsteel公司在美国卖的很好的野猪矛，改进自印第安人的狩�
 
 治安镇暴等警察职能的需要
 
-![img](../assets/Dem-Arendelle矛-34.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-34.jpg)
 Arendelle是一个小国，从电影表现来看，民风淳朴，安宁和平，君民关系良好。因此，首先国内发生动乱的可能性就很低。Arendelle虽然国土面积不大，但依靠得天独厚的地理位置，Arendelle成为一个贸易强国。在Agnarr时期和Elsa时期，作为爱好和平的两位君主，父女二人主要精力应该都放在了发展民生，经济，以及与他国保持友好伙伴关系上。
 
 Weston公爵的话侧面反映了Arendelle的财力，得益于良港的进出口贸易。
 
 这么看来，Arendelle王军就没有什么用“武”之地。方阵作战和主要为骑兵设计的长矛，显然是没有必要的。
 
-![img](../assets/Dem-Arendelle矛-35.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-35.jpg)
 他们的工作遍及国家生活的方方面面，如日常护卫，巡逻，赈灾等。
 
-![img](../assets/Dem-Arendelle矛-36.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-36.jpg)
 
 较长的长矛容易给人以威胁之感，虽然Arendelle王军日常并不携带武器，但如果有需要的话，短矛显得就不那么危险。毕竟军队和民众几乎零距离。
 
@@ -193,13 +193,13 @@ Arendelle不设专门的警察，由王军直接负责保卫民众安全。而Ar
 
 而在城市执法中，为了避免过大的伤害和民众的安全，警用武器的轻便短小，易携带和低危险性是古今中外的共识。
 
-![img](../assets/Dem-Arendelle矛-37.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-37.jpeg)
 像是中国古代捕快的铁尺
 
-![img](../assets/Dem-Arendelle矛-38.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-38.jpeg)
 日本町奉行（民警）的十手
 
-![img](../assets/Dem-Arendelle矛-39.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-39.jpeg)
 80年代美国警察的.38警用柯尔特左轮手枪
 
 不言而喻。
@@ -207,59 +207,59 @@ Arendelle不设专门的警察，由王军直接负责保卫民众安全。而Ar
 
 北地一战后造成的军力的相对匮乏
 
-![img](../assets/Dem-Arendelle矛-40.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-40.jpg)
 
-![img](../assets/Dem-Arendelle矛-41.png)
-![img](../assets/Dem-Arendelle矛-42.png)
-![img](../assets/Dem-Arendelle矛-43.png)
-![img](../assets/Dem-Arendelle矛-44.png)
-![img](../assets/Dem-Arendelle矛-45.jpeg)
-![img](../assets/Dem-Arendelle矛-46.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-41.jpg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-42.jpg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-43.jpg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-44.jpg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-45.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-46.jpeg)
 先代国王Runeard因对魔法的恐惧而做出的错误决定引发了北地之战，战况激烈，双方损失惨重。而自然之灵的降怒更是带来了大量伤亡。Arendelle军队本来就不庞大，这一战造成了严重的兵力亏空。无论是FRZOZEN第一部中Hans需要以志愿的方式组建搜救队（虽然Hans有自己的算盘，但人手匮乏是真的），还是在最新小说《Dangerous Secret》中Arendelle借助武力强国Vassar的兵力来守卫城堡，都体现了这一点。
 
 这种场景暂时是不可能再实现了，因此矛的单兵化，短小轻便化也就成了必然。
 
 ### 三．Arendelle矛在战斗中的使用
 
-![img](../assets/Dem-Arendelle矛-47.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-47.jpg)
 由于Arendelle军的第一战斗表现就遇见了棉花糖这个不讲武德的魔怪，无法进行近距离作战，我们也就失去了欣赏Arendelle军使用矛刺击的机会。
 
-![img](../assets/Dem-Arendelle矛-19.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-19.jpg)
 在上山时，可见Hans腰间佩戴单手剑。
 
 而Arendelle军并没有配备多余的武器。
 
-![img](../assets/Dem-Arendelle矛-48.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-48.jpg)
 这支搜救队伍以志愿的形式临时组织起来，而且也没有直接的作战目的，携带武器主要的目的也就是为了防止野兽侵袭，装备简陋也是情有可原。
 
-![img](../assets/Dem-Arendelle矛-49.png)
-![img](../assets/Dem-Arendelle矛-50.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-49.jpg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-50.jpg)
 在遭遇棉花糖后，Arendelle士兵发现很难与其进行近距离作战，并没有慌乱，立刻切换矛为投掷标枪姿势。
 
-![img](../assets/Dem-Arendelle矛-51.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-51.jpg)
 Arendelle军人强大的心理素质，临危不乱和作战的随机应变能力可见一斑。
 
-![img](../assets/Dem-Arendelle矛-52.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-52.jpg)
 此时Arendelle士兵排成整齐的队伍，对棉花糖发起投枪攻击，就如同置身真实的战场一般。
 
 
-![img](../assets/Dem-Arendelle矛-53.jpeg)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-53.jpeg)
 注意（这两幅战场图投掷的是标枪，算是矛的变体）
 
-![img](../assets/Dem-Arendelle矛-54.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-54.jpg)
 
 根据电影设定，北地一战后，在Agnarr统治时期，Arendelle经历了长期的和平。但从应战的表现Arendelle的光荣子弟们并没有变成老爷兵，作战能力没有丢下，一直没有放弃训练，严阵以待，随时为了守护Arendelle，Arendelle的女王和公主而献出生命。
 
-![img](../assets/Dem-Arendelle矛-55.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-55.jpg)
 
-![img](../assets/Dem-Arendelle矛-56.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-56.jpg)
 一波标枪攻击并没有对棉花糖造成有效杀伤，此时Arendelle军已经空手。注意上图左下角的士兵，此时他们空手，身上没有多余装备。
 
 注意最左侧，下一秒，他们就“变”出了单手剑。刚才护头防御棉花糖攻击的几人，紧靠两名持十字弩的特工，这期间寸步未动。这也许是电影为数不多的穿帮之一。
 
-![img](../assets/Dem-Arendelle矛-57.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-57.jpg)
 
-![img](../assets/Dem-Arendelle矛-58.png)
+![img](/饮茶室QA/assets/Dem-Arendelle矛-58.jpg)
 
 进入城堡后，全体Arendelle士兵都换上了单手剑，原来他们是有副武器的，可能是从马鞍边的剑鞘里拔出来的，虽然没有给出表现。而这同样体现了Arendelle士兵的军事素质，懂得随身携带副武器来适应多种作战情况，在失去主武器矛时提高持续作战能力。
 
