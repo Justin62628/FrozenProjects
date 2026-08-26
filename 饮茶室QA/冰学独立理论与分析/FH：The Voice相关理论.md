@@ -10,7 +10,7 @@ tags:
   - area/frozen
 related:
   - "[[饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice]]"
-  - "[[饮茶室QA/冰学独立理论与分析/FH：Ahtohallan是四灵之母]]"
+  - "[[饮茶室QA/冰学独立理论与分析/Ahtohallan设定相关理论]]"
 updated: 2026-08-26
 ---
 
@@ -51,4 +51,4 @@ updated: 2026-08-26
 ## 与其他条目的关系
 
 - the Voice 首次聆听的考证与 STNC 依据见 [[饮茶室QA/冰学独立理论与分析/FH：ITU第一次听见the Voice]]
-- Ahtohallan 作为 mother spirit 的本体论述见 [[饮茶室QA/冰学独立理论与分析/FH：Ahtohallan是四灵之母]]（本条目即从该条目中拆分而来）
+- Ahtohallan 作为 mother spirit 的本体论述见 [[饮茶室QA/冰学独立理论与分析/Ahtohallan设定相关理论]]（本条目即从该条目中拆分而来）

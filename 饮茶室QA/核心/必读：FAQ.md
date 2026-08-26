@@ -65,7 +65,7 @@ Ahtohallan有意识这件事是在Polar Nights这本小说里实锤的
 （2026-02-11 01:07:44 黎明）
 
 A: FH: 目前来说可以这么理解，这玩意是四灵的妈
-见[[FH：Ahtohallan是四灵之母]]、[[FH：Ahtohallan可能预知未来]]
+见[[Ahtohallan设定相关理论]]、[[Ahtohallan设定相关理论#五、Ahtohallan 可能预知未来（原独立条目合并）]]
 
 ### Q：为什么不直接控制那个石头巨人把大坝砸了，还兜这么一个大圈子
 

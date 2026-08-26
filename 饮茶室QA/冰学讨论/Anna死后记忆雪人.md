@@ -66,4 +66,4 @@ Snowflake：Nooo whyyyy, it's full of angst.
 
 ## 短析
 
-这不是给 Anna 加魔法的提案，也不是官设。FH 把旧永生论收成「退休条件 = 第五灵使命结束」，然后用思想实验压两个空：Anna 死后桥还在不在；Athl 的记忆能不能冒充活人。Sophialexa / 苞谷的反对和 [[饮茶室QA/冰学独立理论与分析/FH：EA不基于欲望的真爱]] 一致——假 Anna 不尊重本人，Olaf 已经是「a little bit of you and me」。雪人被写成记忆集合体而不是第二只 Olaf，等于承认 Athl 存的是调用，不是复活。同日稍早 FH 还把冰宫和 Athl 拆开：冰宫是隔离用的临时建筑，Athl 是创世神级、F1/F2 背后那盘棋，见 [[饮茶室QA/冰学独立理论与分析/FH：Ahtohallan是四灵之母]]。
+这不是给 Anna 加魔法的提案，也不是官设。FH 把旧永生论收成「退休条件 = 第五灵使命结束」，然后用思想实验压两个空：Anna 死后桥还在不在；Athl 的记忆能不能冒充活人。Sophialexa / 苞谷的反对和 [[饮茶室QA/冰学独立理论与分析/FH：EA不基于欲望的真爱]] 一致——假 Anna 不尊重本人，Olaf 已经是「a little bit of you and me」。雪人被写成记忆集合体而不是第二只 Olaf，等于承认 Athl 存的是调用，不是复活。同日稍早 FH 还把冰宫和 Athl 拆开：冰宫是隔离用的临时建筑，Athl 是创世神级、F1/F2 背后那盘棋，见 [[饮茶室QA/冰学独立理论与分析/Ahtohallan设定相关理论]]。
