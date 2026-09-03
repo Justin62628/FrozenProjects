@@ -44,6 +44,7 @@ updated: 2026-08-22
 ## 冰学独立理论与分析
 
 - [[FH：Show Yourself Metaphor]] — FH：Show Yourself 场景的情感/象征逻辑
+- [[饮茶室QA/冰学独立理论与分析/FH：SY分析]] — 2020中期；SY 逐句分析：自己就是自己在找的 bridge，show yourself = show myself
 - [[FH：母女线分析]] — FH：Iduna 线索如何贯穿 F2
 - [[FH：Elsa魔法两面性是给予者故意的]] — 魔法是对 Arendelle 的测试
 - [[饮茶室QA/冰学独立理论与分析/FH：莎雕分析]] — 无法接受拆坝后果；绝望具象化
